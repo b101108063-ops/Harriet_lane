@@ -1,5 +1,5 @@
 ---
-title: "Chapter 7: 麻醉"
+title: "Chapter 07: Anesthesia"
 weight: 7
 chapter: true
 ---

@@ -1,5 +1,5 @@
 ---
-title: "Chapter 05: Adolescent Medicine"
+title: "Chapter 05: Development and Behavior"
 weight: 5
 chapter: true
 ---

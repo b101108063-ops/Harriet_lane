@@ -1,5 +1,5 @@
 ---
-title: "Chapter 9: 風濕性疾病"
+title: "Chapter 09: Rheumatic Diseases"
 weight: 9
 chapter: true
 ---

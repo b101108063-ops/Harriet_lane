@@ -1,5 +1,5 @@
 ---
-title: "Chapter 9: Development, Behavior, and Developmental Disability"
+title: "Chapter 09: Development, Behavior, and Developmental Disability"
 weight: 9
 chapter: true
 ---

@@ -1,5 +1,5 @@
 ---
-title: "Chapter 7: Cardiology"
+title: "Chapter 07: Cardiology"
 weight: 7
 chapter: true
 ---

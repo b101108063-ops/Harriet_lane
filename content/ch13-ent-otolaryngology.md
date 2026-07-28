@@ -1,5 +1,5 @@
 ---
-title: "Chapter 13: Genetics: Metabolism and Conditions"
+title: "Chapter 13: ENT and Otolaryngology"
 weight: 13
 chapter: true
 ---

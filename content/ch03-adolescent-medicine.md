@@ -1,5 +1,5 @@
 ---
-title: "Chapter 03: Toxicology"
+title: "Chapter 03: Adolescent Medicine"
 weight: 3
 chapter: true
 ---

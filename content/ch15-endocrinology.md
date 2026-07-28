@@ -1,5 +1,5 @@
 ---
-title: "Chapter 15: Immunology and Allergy"
+title: "Chapter 15: Endocrinology"
 weight: 15
 chapter: true
 ---

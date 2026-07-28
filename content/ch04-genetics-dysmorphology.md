@@ -1,5 +1,5 @@
 ---
-title: "Chapter 04: Procedures"
+title: "Chapter 04: Genetics and Dysmorphology"
 weight: 4
 chapter: true
 ---

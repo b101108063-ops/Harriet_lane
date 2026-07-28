@@ -1,5 +1,5 @@
 ---
-title: "Chapter 2: Traumatic Injuries"
+title: "Chapter 02: Traumatic Injuries"
 weight: 2
 chapter: true
 ---

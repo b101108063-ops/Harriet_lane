@@ -1,5 +1,5 @@
 ---
-title: "Chapter 12: Gastroenterology"
+title: "Chapter 12: Cardiology"
 weight: 12
 chapter: true
 ---

@@ -1,5 +1,5 @@
 ---
-title: "Chapter 6: 止痛與程序鎮靜"
+title: "Chapter 06: Analgesia and Procedural Sedation"
 weight: 6
 chapter: true
 ---

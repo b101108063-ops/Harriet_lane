@@ -1,5 +1,5 @@
 ---
-title: "Chapter 11: Fluids and Electrolytes"
+title: "Chapter 11: Dermatology"
 weight: 11
 chapter: true
 ---
