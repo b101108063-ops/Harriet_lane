@@ -1,5 +1,5 @@
 ---
-title: "Chapter 30: Oncology"
+title: "Chapter 30: Drug Dosages"
 weight: 30
 chapter: true
 ---

@@ -1,5 +1,5 @@
 ---
-title: "Chapter 26: Rheumatology"
+title: "Chapter 26: Radiology"
 weight: 26
 chapter: true
 ---

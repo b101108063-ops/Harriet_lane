@@ -30,7 +30,8 @@ body { font-size: 14px; line-height: 1.5; }
 
 <div class="main-content">
 <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 0.75rem;">
-{{- range .Site.Home.Pages -}}
+{{- $pages := .Site.RegularPages -}}
+{{- range $pages.ByWeight -}}
 <div class="post-item">
   <a href="{{ .RelPermalink }}">
     <div class="card">

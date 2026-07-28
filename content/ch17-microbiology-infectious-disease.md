@@ -1,5 +1,5 @@
 ---
-title: "Chapter 17: Gynecology"
+title: "Chapter 17: Microbiology and Infectious Disease"
 weight: 17
 chapter: true
 ---

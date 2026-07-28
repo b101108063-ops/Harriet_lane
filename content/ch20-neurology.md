@@ -1,5 +1,5 @@
 ---
-title: "Chapter 20: Poisoning and Toxicology"
+title: "Chapter 20: Neurology"
 weight: 20
 chapter: true
 ---

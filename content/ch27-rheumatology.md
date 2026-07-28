@@ -1,5 +1,5 @@
 ---
-title: "Chapter 27: Sports Medicine"
+title: "Chapter 27: Rheumatology"
 weight: 27
 chapter: true
 ---

@@ -1,5 +1,5 @@
 ---
-title: "Chapter 16: Gastroenterology and Hepatology"
+title: "Chapter 16: Immunoprophylaxis"
 weight: 16
 chapter: true
 ---

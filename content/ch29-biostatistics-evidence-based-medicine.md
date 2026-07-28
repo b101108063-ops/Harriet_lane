@@ -1,5 +1,5 @@
 ---
-title: "Chapter 29: Hematology"
+title: "Chapter 29: Biostatistics and Evidence-Based Medicine"
 weight: 29
 chapter: true
 ---
