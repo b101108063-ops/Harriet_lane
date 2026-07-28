@@ -1,0 +1,21 @@
+baseURL = 'https://b101108063-ops.github.io/Harriet_lane/'
+languageCode = 'en-us'
+title = 'Harriet Lane Handbook'
+theme = 'PaperMod'
+
+[markup.goldmark.renderer]
+  unsafe = true
+
+[markup.goldmark.extensions]
+  headingIDs = false
+
+[frontmatter]
+date = ["date", "publishDate", "lastmod"]
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[outputFormats.JSON]
+  mediatype = "application/json"
+  baseName = "index"
+  isPlainText = true

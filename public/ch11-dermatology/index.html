@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Chapter 11: Fluids and Electrolytes | Harriet Lane Handbook</title>
+<meta name="keywords" content="">
+<meta name="description" content="導讀摘要
+本章節內容涵蓋靜脈輸液（IVF）的基礎與臨床應用、Holliday-Segar 計算法、脫水評估與液體復甦策略，以及電解質異常（鈉、鉀、鈣、鎂、磷酸鹽）的診斷與治療，最後提供酸鹼平衡障礙的系統性評估方法。
+靜脈輸液並非只是單純的水分補充，而是需要根據年齡、體重、脫水程度、脫水類型（等張性、低張性、高張性）及潛在疾病來精確處方的藥物。根據 AAP 2018 年的指引，等張性液體已成為大多數住院兒童（28天至18歲）的首選維持液體。低張性液體僅建議用於28天以下新生兒。
+脫水評估需結合臨床觀察（精神狀態、眼淚、口腔黏膜、皮膚彈性、毛細血管填充時間、尿量）與體重變化。液體復甦採三階段策略：快速復甦（20 mL/kg 等張液體）→ 補足剩餘缺乏的一半（前8小時）→ 補足另一半（後16小時），同時給予維持液體。
+電解質異常的處理需格外謹慎：低血鈉的糾正速度不可超過 10-12 mEq/L/24小時，以避免滲透性脫髓鞘症候群；高血鈉的糾正速度同樣不可超過 10 mEq/L/24小時，以避免腦水腫。高血鉀的處理則需按心電圖變化優先給予葡萄糖酸鈣穩定心肌細胞膜。
+
+I. 輸液復甦（Fluid Resuscitation）
+A. 維持液體積計算——Holliday-Segar 法
+Holliday-Segar 法是臨床上最廣泛使用的兒童維持液體積估算方法，根據體重類別估算熱量消耗，並假設每燃燒 100 大卡需要 100 mL 水。
+
+NOTE： 此方法不適用於出生未滿14天的新生兒，因為通常會高估其液體需求。
+
+
+  
+      
+          體重區間
+          每日劑量（mL/kg/day）
+          每小時劑量（mL/kg/hr）
+      
+  
+  
+      
+          前 10 kg
+          100
+          4
+      
+      
+          第2個10 kg
+          50
+          2
+      
+      
+          每額外 1 kg
+          20
+          1
+      
+  
+
+計算範例： 8歲兒童，體重25公斤：
+
+前10 kg：4 mL/kg/hr × 10 kg = 40 mL/hr
+第2個10 kg：2 mL/kg/hr × 10 kg = 20 mL/hr
+額外5 kg：1 mL/kg/hr × 5 kg = 5 mL/hr
+答案：65 mL/hr
+
+最大建議速率：120 mL/hr（無心臟、肝臟或腎臟疾病的患者）。">
+<meta name="author" content="">
+<link rel="canonical" href="https://b101108063-ops.github.io/Harriet_lane/ch11-dermatology/">
+<link crossorigin="anonymous" href="/Harriet_lane/assets/css/stylesheet.6ff46447b1fa3f8a5cc0bcae48088decc3ae37f5fbc99406a3aefc3bf0e6044a.css" integrity="sha256-b/RkR7H6P4pcwLyuSAiN7MOuN/X7yZQGo678O/DmBEo=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://b101108063-ops.github.io/Harriet_lane/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://b101108063-ops.github.io/Harriet_lane/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://b101108063-ops.github.io/Harriet_lane/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://b101108063-ops.github.io/Harriet_lane/apple-touch-icon.png">
+<link rel="mask-icon" href="https://b101108063-ops.github.io/Harriet_lane/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://b101108063-ops.github.io/Harriet_lane/ch11-dermatology/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script><meta property="og:url" content="https://b101108063-ops.github.io/Harriet_lane/ch11-dermatology/">
+  <meta property="og:site_name" content="Harriet Lane Handbook">
+  <meta property="og:title" content="Chapter 11: Fluids and Electrolytes">
+  <meta property="og:description" content="導讀摘要 本章節內容涵蓋靜脈輸液（IVF）的基礎與臨床應用、Holliday-Segar 計算法、脫水評估與液體復甦策略，以及電解質異常（鈉、鉀、鈣、鎂、磷酸鹽）的診斷與治療，最後提供酸鹼平衡障礙的系統性評估方法。
+靜脈輸液並非只是單純的水分補充，而是需要根據年齡、體重、脫水程度、脫水類型（等張性、低張性、高張性）及潛在疾病來精確處方的藥物。根據 AAP 2018 年的指引，等張性液體已成為大多數住院兒童（28天至18歲）的首選維持液體。低張性液體僅建議用於28天以下新生兒。
+脫水評估需結合臨床觀察（精神狀態、眼淚、口腔黏膜、皮膚彈性、毛細血管填充時間、尿量）與體重變化。液體復甦採三階段策略：快速復甦（20 mL/kg 等張液體）→ 補足剩餘缺乏的一半（前8小時）→ 補足另一半（後16小時），同時給予維持液體。
+電解質異常的處理需格外謹慎：低血鈉的糾正速度不可超過 10-12 mEq/L/24小時，以避免滲透性脫髓鞘症候群；高血鈉的糾正速度同樣不可超過 10 mEq/L/24小時，以避免腦水腫。高血鉀的處理則需按心電圖變化優先給予葡萄糖酸鈣穩定心肌細胞膜。
+I. 輸液復甦（Fluid Resuscitation） A. 維持液體積計算——Holliday-Segar 法 Holliday-Segar 法是臨床上最廣泛使用的兒童維持液體積估算方法，根據體重類別估算熱量消耗，並假設每燃燒 100 大卡需要 100 mL 水。
+NOTE： 此方法不適用於出生未滿14天的新生兒，因為通常會高估其液體需求。
+體重區間 每日劑量（mL/kg/day） 每小時劑量（mL/kg/hr） 前 10 kg 100 4 第2個10 kg 50 2 每額外 1 kg 20 1 計算範例： 8歲兒童，體重25公斤：
+前10 kg：4 mL/kg/hr × 10 kg = 40 mL/hr 第2個10 kg：2 mL/kg/hr × 10 kg = 20 mL/hr 額外5 kg：1 mL/kg/hr × 5 kg = 5 mL/hr 答案：65 mL/hr 最大建議速率：120 mL/hr（無心臟、肝臟或腎臟疾病的患者）。">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Chapter 11: Fluids and Electrolytes">
+  <meta name="twitter:description" content="導讀摘要 本章節內容涵蓋靜脈輸液（IVF）的基礎與臨床應用、Holliday-Segar 計算法、脫水評估與液體復甦策略，以及電解質異常（鈉、鉀、鈣、鎂、磷酸鹽）的診斷與治療，最後提供酸鹼平衡障礙的系統性評估方法。
+靜脈輸液並非只是單純的水分補充，而是需要根據年齡、體重、脫水程度、脫水類型（等張性、低張性、高張性）及潛在疾病來精確處方的藥物。根據 AAP 2018 年的指引，等張性液體已成為大多數住院兒童（28天至18歲）的首選維持液體。低張性液體僅建議用於28天以下新生兒。
+脫水評估需結合臨床觀察（精神狀態、眼淚、口腔黏膜、皮膚彈性、毛細血管填充時間、尿量）與體重變化。液體復甦採三階段策略：快速復甦（20 mL/kg 等張液體）→ 補足剩餘缺乏的一半（前8小時）→ 補足另一半（後16小時），同時給予維持液體。
+電解質異常的處理需格外謹慎：低血鈉的糾正速度不可超過 10-12 mEq/L/24小時，以避免滲透性脫髓鞘症候群；高血鈉的糾正速度同樣不可超過 10 mEq/L/24小時，以避免腦水腫。高血鉀的處理則需按心電圖變化優先給予葡萄糖酸鈣穩定心肌細胞膜。
+I. 輸液復甦（Fluid Resuscitation） A. 維持液體積計算——Holliday-Segar 法 Holliday-Segar 法是臨床上最廣泛使用的兒童維持液體積估算方法，根據體重類別估算熱量消耗，並假設每燃燒 100 大卡需要 100 mL 水。
+NOTE： 此方法不適用於出生未滿14天的新生兒，因為通常會高估其液體需求。
+體重區間 每日劑量（mL/kg/day） 每小時劑量（mL/kg/hr） 前 10 kg 100 4 第2個10 kg 50 2 每額外 1 kg 20 1 計算範例： 8歲兒童，體重25公斤：
+前10 kg：4 mL/kg/hr × 10 kg = 40 mL/hr 第2個10 kg：2 mL/kg/hr × 10 kg = 20 mL/hr 額外5 kg：1 mL/kg/hr × 5 kg = 5 mL/hr 答案：65 mL/hr 最大建議速率：120 mL/hr（無心臟、肝臟或腎臟疾病的患者）。">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Chapter 11: Fluids and Electrolytes",
+      "item": "https://b101108063-ops.github.io/Harriet_lane/ch11-dermatology/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Chapter 11: Fluids and Electrolytes",
+  "name": "Chapter 11: Fluids and Electrolytes",
+  "description": "導讀摘要 本章節內容涵蓋靜脈輸液（IVF）的基礎與臨床應用、Holliday-Segar 計算法、脫水評估與液體復甦策略，以及電解質異常（鈉、鉀、鈣、鎂、磷酸鹽）的診斷與治療，最後提供酸鹼平衡障礙的系統性評估方法。\n靜脈輸液並非只是單純的水分補充，而是需要根據年齡、體重、脫水程度、脫水類型（等張性、低張性、高張性）及潛在疾病來精確處方的藥物。根據 AAP 2018 年的指引，等張性液體已成為大多數住院兒童（28天至18歲）的首選維持液體。低張性液體僅建議用於28天以下新生兒。\n脫水評估需結合臨床觀察（精神狀態、眼淚、口腔黏膜、皮膚彈性、毛細血管填充時間、尿量）與體重變化。液體復甦採三階段策略：快速復甦（20 mL/kg 等張液體）→ 補足剩餘缺乏的一半（前8小時）→ 補足另一半（後16小時），同時給予維持液體。\n電解質異常的處理需格外謹慎：低血鈉的糾正速度不可超過 10-12 mEq/L/24小時，以避免滲透性脫髓鞘症候群；高血鈉的糾正速度同樣不可超過 10 mEq/L/24小時，以避免腦水腫。高血鉀的處理則需按心電圖變化優先給予葡萄糖酸鈣穩定心肌細胞膜。\nI. 輸液復甦（Fluid Resuscitation） A. 維持液體積計算——Holliday-Segar 法 Holliday-Segar 法是臨床上最廣泛使用的兒童維持液體積估算方法，根據體重類別估算熱量消耗，並假設每燃燒 100 大卡需要 100 mL 水。\nNOTE： 此方法不適用於出生未滿14天的新生兒，因為通常會高估其液體需求。\n體重區間 每日劑量（mL/kg/day） 每小時劑量（mL/kg/hr） 前 10 kg 100 4 第2個10 kg 50 2 每額外 1 kg 20 1 計算範例： 8歲兒童，體重25公斤：\n前10 kg：4 mL/kg/hr × 10 kg = 40 mL/hr 第2個10 kg：2 mL/kg/hr × 10 kg = 20 mL/hr 額外5 kg：1 mL/kg/hr × 5 kg = 5 mL/hr 答案：65 mL/hr 最大建議速率：120 mL/hr（無心臟、肝臟或腎臟疾病的患者）。\n",
+  "keywords": [
+    
+  ],
+  "articleBody": "導讀摘要 本章節內容涵蓋靜脈輸液（IVF）的基礎與臨床應用、Holliday-Segar 計算法、脫水評估與液體復甦策略，以及電解質異常（鈉、鉀、鈣、鎂、磷酸鹽）的診斷與治療，最後提供酸鹼平衡障礙的系統性評估方法。\n靜脈輸液並非只是單純的水分補充，而是需要根據年齡、體重、脫水程度、脫水類型（等張性、低張性、高張性）及潛在疾病來精確處方的藥物。根據 AAP 2018 年的指引，等張性液體已成為大多數住院兒童（28天至18歲）的首選維持液體。低張性液體僅建議用於28天以下新生兒。\n脫水評估需結合臨床觀察（精神狀態、眼淚、口腔黏膜、皮膚彈性、毛細血管填充時間、尿量）與體重變化。液體復甦採三階段策略：快速復甦（20 mL/kg 等張液體）→ 補足剩餘缺乏的一半（前8小時）→ 補足另一半（後16小時），同時給予維持液體。\n電解質異常的處理需格外謹慎：低血鈉的糾正速度不可超過 10-12 mEq/L/24小時，以避免滲透性脫髓鞘症候群；高血鈉的糾正速度同樣不可超過 10 mEq/L/24小時，以避免腦水腫。高血鉀的處理則需按心電圖變化優先給予葡萄糖酸鈣穩定心肌細胞膜。\nI. 輸液復甦（Fluid Resuscitation） A. 維持液體積計算——Holliday-Segar 法 Holliday-Segar 法是臨床上最廣泛使用的兒童維持液體積估算方法，根據體重類別估算熱量消耗，並假設每燃燒 100 大卡需要 100 mL 水。\nNOTE： 此方法不適用於出生未滿14天的新生兒，因為通常會高估其液體需求。\n體重區間 每日劑量（mL/kg/day） 每小時劑量（mL/kg/hr） 前 10 kg 100 4 第2個10 kg 50 2 每額外 1 kg 20 1 計算範例： 8歲兒童，體重25公斤：\n前10 kg：4 mL/kg/hr × 10 kg = 40 mL/hr 第2個10 kg：2 mL/kg/hr × 10 kg = 20 mL/hr 額外5 kg：1 mL/kg/hr × 5 kg = 5 mL/hr 答案：65 mL/hr 最大建議速率：120 mL/hr（無心臟、肝臟或腎臟疾病的患者）。\nB. 體液分布 區間 占體液百分比 特點 細胞內液（ICF） 60%（嬰兒75%） K⁺濃度 ≈ 140 mEq/L，Na⁺可忽略 細胞外液（ECF） 40%（嬰兒25%） Na⁺濃度 ≈ 140 mEq/L，K⁺可忽略 總體水（TBW）公式：\nTBW（L）= 體重（kg）× 0.6（成人）；體重（kg）× 0.75（嬰兒）\nC. 脫水臨床評估 脫水程度 嬰兒 較大兒童 精神狀態 眼睛 皮膚彈性 輕度 5%（50 mL/kg） 3%（30 mL/kg） 警醒 正常 正常 中度 10%（100 mL/kg） 6%（60 mL/kg） 遲鈍/昏昏欲睡 凹陷 皮膚捏起後恢復延遲（\u003e3秒） 重度 15%（150 mL/kg） 9%（90 mL/kg） 意識障礙/木僵 嚴重凹陷 皮膚捏起後不恢復（\u003e5秒） D. 維持液體選擇 根據不斷累積的實證，美國兒科醫學會（AAP）建議：\n28天至18歲的大多數住院兒童：首選等張性液體 28天以下新生兒：給予低張性液體（如 D5 1/2 NS） 例外情形： 神經外科疾病、先天性或後天性心臟病、肝病、癌症、急性腎損傷、慢性腎病、腎病症候群、尿崩症、大量水樣腹瀉或嚴重燒傷\nII. 電解質管理 A. 鈉（Na⁺）——低血鈉（Hyponatremia） 定義： 血清鈉 135 mEq/L\n臨床表徵 鑑別診斷要點 噁心、頭痛、肌肉痙攣、意識混亂、癲癇發作、昏迷 低血容量性（腎性/腎外）、等血容量性（SIADH）、高血容量性 管理原則：\n補充鈉缺乏（使用等張性液體） 糾正速度不可超過 10-12 mEq/L/24小時（避免滲透性脫髓鞘症候群） 如有中樞神經系統症狀：給予高張鹽水（3% HTS）3-4小時，糾正約5 mEq/L SIADH 情境： 限制水分攝取為首要處置。\nB. 鈉（Na⁺）——高血鈉（Hypernatremia） 定義： 血清鈉 \u003e 145 mEq/L\n臨床表徵 鑑別診斷要點 意識變化、腦出血、血栓形成、肌肉痙攣 尿滲透壓↓：腸胃流失、皮膚流失；尿滲透壓↑：尿崩症、腎病 管理原則：\n糾正速度不可超過 10 mEq/L/24小時（總糾正於48小時內完成） 起因於游離水缺乏或過多含鈉液體攝取 最危險的併發症是腦水腫 初始可使用 D5 1/2 NS C. 鉀（K⁺）——低血鉀（Hypokalemia） 定義： 血清鉀 3.5 mEq/L\n臨床表徵 ECG 變化 肌肉無力或上行性癱瘓、肌肉痙攣、腸阻塞、尿瀦留、心律不整 T波平坦、ST段壓低、U波 TTKG（經腎小管鉀梯度）用於鑑別診斷：\nTTKG = (尿[K⁺] / 血漿[K⁺]) × (血漿滲透壓 / 尿滲透壓)\nTTKG \u003e 4：腎性鉀流失 TTKG ≤ 4：腎外鉀流失 管理： 急性補充時，靜脈鉀輸注速率一般不可超過 1 mEq/kg/hr。\nD. 鉀（K⁺）——高血鉀（Hyperkalemia） 定義： 血清鉀 \u003e 5.5 mEq/L\nECG 進展 臨床表徵 1. T波尖峰 肌肉無力、感覺異常、上行性癱瘓 2. PR間期延長、QRS波變寬 心律不整、心搏停止 3. P波消失 4. ST段壓低、QRS持續變寬 5. 緩脈、AV block、Torsades de pointes、心跳停止 急性處理流程：\n血清K⁺ \u003e 6 mEq/L → 做12導程ECG → 置於心肺監測器 ↓ ┌─ ECG正常 ──────────────────→ 1. 停止飲食及靜脈輸液中的K⁺ │ 2. 口服Kayexalate (Na⁺ polystyrene resin) Q6h │ 或保留灌腸4-6小時 │ └─ ECG異常 ──────────────────→ 1. 立即給予葡萄糖酸鈣（穩定心肌膜，不降低K⁺濃度） │ 2. 碳酸氫鈉（即使無酸中毒） │ 3. 常規胰島素＋葡萄糖 │ 4. albuterol 霧化 │ 5. 如上述無效 → 透析 E. 鈣（Ca²⁺） 狀態 定義 臨床表徵 管理 低血鈣 總鈣 8.5 mg/dL 或游離鈣 4.5 mg/dL 四肢抽搐（tetany）、感覺異常、癲癇、喉痙攣、心律不整 急性：IV 葡萄糖酸鈣；慢性：口服鈣補充製劑 高血鈣 總鈣 \u003e 10.5 mg/dL 無力、易怒、癲癇、昏迷、腹痛、腎結石、胰臟炎 增加尿量、furosemide利尿、嚴重時透析 低血鈣特殊考量：\n白蛋白校正：白蛋白每下降 1 g/dL，總鈣下降約 0.8 mg/dL 頑固性低血鈣需排除低鎂血症 高磷酸鹽血症應先於低血鈣糾正（避免腎結石或軟組織鈣化） F. 鎂（Mg²⁺） 狀態 數值 臨床表徵 管理 低鎂血症 \u003c0.7 mg/dL 食慾不振、噁心、無力、心電圖：T波平坦、ST段延長 急性：IV 硫酸鎂；慢性：口服氧化鎂 高鎂血症 \u003e 4.5 mg/dL 低張力、反射降低、癱瘓、意識障礙、低血壓；\u003e15 mg/dL 可致呼吸衰竭和心搏停止 停用補充鎂、利尿、氯化鈣（嚴重時） III. 酸鹼平衡 A. 評估流程 步驟 內容 1. 確定pH 酸血症 pH \u003c 7.35 或 鹼血症 pH \u003e 7.45 2. 計算陰離子隙（AG） AG = Na⁺ − (Cl⁻ + HCO₃⁻)，正常：12 ± 2 mEq/L 3. 計算Delta Gap 如有AG升高性酸中毒，判斷是否合併其他代謝異常 4. 計算滲透壓差距 計算值 − 實測值，正常差距 \u003c 6；\u003e10見於甲醇或乙二醇中毒 5. 計算預期代償反應 見下表 B. 陰離子隙（AG）分類 AG範圍 類型 AG \u003c 12 非AG升高性代謝性酸中毒（NAGAMA） AG 12-15 正常AG AG \u003e 15 AG升高性代謝性酸中毒（AGMA） AG \u003e 20 mEq/L 無論pH或HCO₃⁻如何，即為原發性AGMA AGMA 病因記憶口號（MUDPILES）：\nMethanol（甲醇）、Uremia（尿毒症）、DKA、Paraldehyde、Isoniazid、Iron、Lactic acidosis（L型和D型乳酸）、Ethylene glycol（乙二醇）、Rhabdomyolysis、Salicylates C. 預期代償反應 障礙類型 主要變化 預期代償 急性呼吸性酸中毒 PaCO₂ ↑ 10 mmHg HCO₃⁻ ↑ 1 mEq/L 慢性呼吸性酸中毒 PaCO₂ ↑ 10 mmHg HCO₃⁻ ↑ 4 mEq/L 代謝性酸中毒 HCO₃⁻ ↓ 10 mEq/L PaCO₂ ↓ 1.5 × [HCO₃⁻] + 8 ± 2 代謝性鹼中毒 HCO₃⁻ ↑ 10 mEq/L PaCO₂ ↑ 7 mmHg IV. 重要參考數值 參數 正常值 血清滲透壓 285–295 mOsm/kg 血清鈉 135–145 mEq/L 血清鉀 3.5–5.0 mEq/L 血清鈣（總） 8.5–10.5 mg/dL 血鎂 1.5–2.5 mg/dL 陰離子隙 12 ± 2 mEq/L 維持鉀需求（無高血鉀或腎衰竭時） 20 mEq/L 輸液 ⚠️ 臨床警告\n低血鈉與高血鈉的糾正速度過快都可能造成嚴重神經學後遺症（分別為滲透性脫髓鞘症候群和腦水腫） 鉀的靜脈補充絕對不可超過 1 mEq/kg/hr 高血鉀時，心電圖變化優先於數值——有心電圖異常時立即給予葡萄糖酸鈣 新生兒（\u003c14天）不適用Holliday-Segar公式 ",
+  "wordCount" : "496",
+  "inLanguage": "en",
+  "datePublished": "0001-01-01T00:00:00Z",
+  "dateModified": "0001-01-01T00:00:00Z",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://b101108063-ops.github.io/Harriet_lane/ch11-dermatology/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Harriet Lane Handbook",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://b101108063-ops.github.io/Harriet_lane/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="header-nav">
+        <div class="logo">
+            <a href="https://b101108063-ops.github.io/Harriet_lane/" accesskey="h" title="Harriet Lane Handbook (Alt + H)">Harriet Lane Handbook</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" class="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu" class="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      Chapter 11: Fluids and Electrolytes
+    </h1>
+    <div class="post-meta">
+
+
+
+</div>
+  </header> 
+  <div class="post-content md-content"><h2 id="導讀摘要">導讀摘要<a hidden class="anchor" aria-hidden="true" href="#導讀摘要">#</a></h2>
+<p>本章節內容涵蓋靜脈輸液（IVF）的基礎與臨床應用、Holliday-Segar 計算法、脫水評估與液體復甦策略，以及<span style="color:#34d399">電解質異常（鈉、鉀、鈣、鎂、磷酸鹽）的診斷與治療</span>，最後提供<span style="color:#60a5fa">酸鹼平衡障礙的系統性評估方法</span>。</p>
+<p>靜脈輸液並非只是單純的水分補充，而是需要根據<span style="color:#60a5fa">年齡、體重、脫水程度、脫水類型（等張性、低張性、高張性）及潛在疾病</span>來精確處方的藥物。根據 AAP 2018 年的指引，<span style="color:#22d3ee">等張性液體</span>已成為大多數住院兒童（28天至18歲）的首選維持液體。低張性液體僅建議用於<span style="color:#f87171">28天以下新生兒</span>。</p>
+<p>脫水評估需結合<span style="color:#60a5fa">臨床觀察（精神狀態、眼淚、口腔黏膜、皮膚彈性、毛細血管填充時間、尿量）</span>與體重變化。液體復甦採<span style="color:#60a5fa">三階段策略</span>：快速復甦（20 mL/kg 等張液體）→ 補足剩餘缺乏的一半（前8小時）→ 補足另一半（後16小時），同時給予維持液體。</p>
+<p>電解質異常的處理需格外謹慎：<span style="color:#f87171">低血鈉的糾正速度不可超過 10-12 mEq/L/24小時</span>，以避免滲透性脫髓鞘症候群；<span style="color:#f87171">高血鈉的糾正速度同樣不可超過 10 mEq/L/24小時</span>，以避免腦水腫。高血鉀的處理則需按<span style="color:#f87171">心電圖變化優先給予葡萄糖酸鈣</span>穩定心肌細胞膜。</p>
+<hr>
+<h2 id="i-輸液復甦fluid-resuscitation">I. 輸液復甦（Fluid Resuscitation）<a hidden class="anchor" aria-hidden="true" href="#i-輸液復甦fluid-resuscitation">#</a></h2>
+<h3 id="a-維持液體積計算holliday-segar-法">A. 維持液體積計算——Holliday-Segar 法<a hidden class="anchor" aria-hidden="true" href="#a-維持液體積計算holliday-segar-法">#</a></h3>
+<p><span style="color:#60a5fa">Holliday-Segar 法</span>是臨床上最廣泛使用的兒童維持液體積估算方法，根據體重類別估算熱量消耗，並假設每燃燒 100 大卡需要 100 mL 水。</p>
+<blockquote>
+<p><strong>NOTE：</strong> 此方法<span style="color:#f87171">不適用於出生未滿14天的新生兒</span>，因為通常會高估其液體需求。</p>
+</blockquote>
+<table>
+  <thead>
+      <tr>
+          <th>體重區間</th>
+          <th>每日劑量（mL/kg/day）</th>
+          <th>每小時劑量（mL/kg/hr）</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>前 10 kg</td>
+          <td>100</td>
+          <td>4</td>
+      </tr>
+      <tr>
+          <td>第2個10 kg</td>
+          <td>50</td>
+          <td>2</td>
+      </tr>
+      <tr>
+          <td>每額外 1 kg</td>
+          <td>20</td>
+          <td>1</td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>計算範例：</strong> 8歲兒童，體重25公斤：</p>
+<ul>
+<li>前10 kg：4 mL/kg/hr × 10 kg = 40 mL/hr</li>
+<li>第2個10 kg：2 mL/kg/hr × 10 kg = 20 mL/hr</li>
+<li>額外5 kg：1 mL/kg/hr × 5 kg = 5 mL/hr</li>
+<li><strong>答案：65 mL/hr</strong></li>
+</ul>
+<p><span style="color:#60a5fa">最大建議速率：120 mL/hr</span>（無心臟、肝臟或腎臟疾病的患者）。</p>
+<h3 id="b-體液分布">B. 體液分布<a hidden class="anchor" aria-hidden="true" href="#b-體液分布">#</a></h3>
+<table>
+  <thead>
+      <tr>
+          <th>區間</th>
+          <th>占體液百分比</th>
+          <th>特點</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><span style="color:#22d3ee">細胞內液（ICF）</span></td>
+          <td>60%（嬰兒75%）</td>
+          <td>K⁺濃度 ≈ <span style="color:#34d399">140 mEq/L</span>，Na⁺可忽略</td>
+      </tr>
+      <tr>
+          <td><span style="color:#22d3ee">細胞外液（ECF）</span></td>
+          <td>40%（嬰兒25%）</td>
+          <td>Na⁺濃度 ≈ <span style="color:#34d399">140 mEq/L</span>，K⁺可忽略</td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>總體水（TBW）公式：</strong></p>
+<blockquote>
+<p>TBW（L）= 體重（kg）× 0.6（成人）；體重（kg）× 0.75（嬰兒）</p>
+</blockquote>
+<h3 id="c-脫水臨床評估">C. 脫水臨床評估<a hidden class="anchor" aria-hidden="true" href="#c-脫水臨床評估">#</a></h3>
+<table>
+  <thead>
+      <tr>
+          <th>脫水程度</th>
+          <th>嬰兒</th>
+          <th>較大兒童</th>
+          <th>精神狀態</th>
+          <th>眼睛</th>
+          <th>皮膚彈性</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>輕度</td>
+          <td>5%（50 mL/kg）</td>
+          <td>3%（30 mL/kg）</td>
+          <td>警醒</td>
+          <td>正常</td>
+          <td>正常</td>
+      </tr>
+      <tr>
+          <td>中度</td>
+          <td>10%（100 mL/kg）</td>
+          <td>6%（60 mL/kg）</td>
+          <td>遲鈍/昏昏欲睡</td>
+          <td>凹陷</td>
+          <td>皮膚捏起後恢復延遲（&gt;3秒）</td>
+      </tr>
+      <tr>
+          <td>重度</td>
+          <td>15%（150 mL/kg）</td>
+          <td>9%（90 mL/kg）</td>
+          <td>意識障礙/木僵</td>
+          <td>嚴重凹陷</td>
+          <td>皮膚捏起後不恢復（&gt;5秒）</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="d-維持液體選擇">D. 維持液體選擇<a hidden class="anchor" aria-hidden="true" href="#d-維持液體選擇">#</a></h3>
+<p>根據不斷累積的實證，美國兒科醫學會（AAP）建議：</p>
+<ul>
+<li><span style="color:#60a5fa">28天至18歲</span>的大多數住院兒童：首選<span style="color:#22d3ee">等張性液體</span></li>
+<li><span style="color:#f87171">28天以下新生兒</span>：給予低張性液體（如 D5 1/2 NS）</li>
+</ul>
+<p><span style="color:#f87171"><strong>例外情形：</strong> 神經外科疾病、先天性或後天性心臟病、肝病、癌症、急性腎損傷、慢性腎病、腎病症候群、尿崩症、大量水樣腹瀉或嚴重燒傷</span></p>
+<hr>
+<h2 id="ii-電解質管理">II. 電解質管理<a hidden class="anchor" aria-hidden="true" href="#ii-電解質管理">#</a></h2>
+<h3 id="a-鈉na低血鈉hyponatremia">A. 鈉（Na⁺）——低血鈉（Hyponatremia）<a hidden class="anchor" aria-hidden="true" href="#a-鈉na低血鈉hyponatremia">#</a></h3>
+<p><strong>定義：</strong> 血清鈉 <span style="color:#34d399">135 mEq/L</span></p>
+<table>
+  <thead>
+      <tr>
+          <th>臨床表徵</th>
+          <th>鑑別診斷要點</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>噁心、頭痛、肌肉痙攣、意識混亂、<span style="color:#f87171">癲癇發作、昏迷</span></td>
+          <td>低血容量性（腎性/腎外）、等血容量性（SIADH）、高血容量性</td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>管理原則：</strong></p>
+<ul>
+<li>補充鈉缺乏（使用等張性液體）</li>
+<li><span style="color:#f87171">糾正速度不可超過 10-12 mEq/L/24小時</span>（避免滲透性脫髓鞘症候群）</li>
+<li>如有<span style="color:#f87171">中樞神經系統症狀</span>：給予高張鹽水（3% HTS）3-4小時，糾正約5 mEq/L</li>
+</ul>
+<p><strong>SIADH 情境：</strong> 限制水分攝取為首要處置。</p>
+<hr>
+<h3 id="b-鈉na高血鈉hypernatremia">B. 鈉（Na⁺）——高血鈉（Hypernatremia）<a hidden class="anchor" aria-hidden="true" href="#b-鈉na高血鈉hypernatremia">#</a></h3>
+<p><strong>定義：</strong> 血清鈉 &gt; <span style="color:#34d399">145 mEq/L</span></p>
+<table>
+  <thead>
+      <tr>
+          <th>臨床表徵</th>
+          <th>鑑別診斷要點</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>意識變化、<span style="color:#f87171">腦出血、血栓形成</span>、肌肉痙攣</td>
+          <td>尿滲透壓↓：腸胃流失、皮膚流失；尿滲透壓↑：尿崩症、腎病</td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>管理原則：</strong></p>
+<ul>
+<li><span style="color:#f87171">糾正速度不可超過 10 mEq/L/24小時</span>（總糾正於48小時內完成）</li>
+<li>起因於游離水缺乏或過多含鈉液體攝取</li>
+<li><span style="color:#f87171">最危險的併發症是腦水腫</span></li>
+<li>初始可使用 D5 1/2 NS</li>
+</ul>
+<hr>
+<h3 id="c-鉀k低血鉀hypokalemia">C. 鉀（K⁺）——低血鉀（Hypokalemia）<a hidden class="anchor" aria-hidden="true" href="#c-鉀k低血鉀hypokalemia">#</a></h3>
+<p><strong>定義：</strong> 血清鉀 <span style="color:#34d399">3.5 mEq/L</span></p>
+<table>
+  <thead>
+      <tr>
+          <th>臨床表徵</th>
+          <th>ECG 變化</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><span style="color:#60a5fa">肌肉無力或上行性癱瘓</span>、肌肉痙攣、腸阻塞、尿瀦留、心律不整</td>
+          <td>T波平坦、ST段壓低、<span style="color:#60a5fa">U波</span></td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>TTKG（經腎小管鉀梯度）用於鑑別診斷：</strong></p>
+<blockquote>
+<p>TTKG = (尿[K⁺] / 血漿[K⁺]) × (血漿滲透壓 / 尿滲透壓)</p>
+</blockquote>
+<ul>
+<li>TTKG &gt; 4：腎性鉀流失</li>
+<li>TTKG ≤ 4：腎外鉀流失</li>
+</ul>
+<p><strong>管理：</strong> 急性補充時，<span style="color:#f87171">靜脈鉀輸注速率一般不可超過 1 mEq/kg/hr</span>。</p>
+<hr>
+<h3 id="d-鉀k高血鉀hyperkalemia">D. 鉀（K⁺）——高血鉀（Hyperkalemia）<a hidden class="anchor" aria-hidden="true" href="#d-鉀k高血鉀hyperkalemia">#</a></h3>
+<p><strong>定義：</strong> 血清鉀 &gt; <span style="color:#34d399">5.5 mEq/L</span></p>
+<table>
+  <thead>
+      <tr>
+          <th>ECG 進展</th>
+          <th>臨床表徵</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>1. T波尖峰</td>
+          <td><span style="color:#60a5fa">肌肉無力、感覺異常、上行性癱瘓</span></td>
+      </tr>
+      <tr>
+          <td>2. PR間期延長、QRS波變寬</td>
+          <td>心律不整、<span style="color:#f87171">心搏停止</span></td>
+      </tr>
+      <tr>
+          <td>3. P波消失</td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>4. ST段壓低、QRS持續變寬</td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>5. 緩脈、AV block、<span style="color:#f87171">Torsades de pointes、心跳停止</span></td>
+          <td></td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>急性處理流程：</strong></p>
+<pre tabindex="0"><code>血清K⁺ &gt; 6 mEq/L → 做12導程ECG → 置於心肺監測器
+         ↓
+    ┌─ ECG正常 ──────────────────→ 1. 停止飲食及靜脈輸液中的K⁺
+    │                                 2. 口服Kayexalate (Na⁺ polystyrene resin) Q6h
+    │                                 或保留灌腸4-6小時
+    │
+    └─ ECG異常 ──────────────────→ 1. 立即給予&lt;span style=&#34;color:#fb923c&#34;&gt;葡萄糖酸鈣&lt;/span&gt;（穩定心肌膜，不降低K⁺濃度）
+         │                           2. &lt;span style=&#34;color:#fb923c&#34;&gt;碳酸氫鈉&lt;/span&gt;（即使無酸中毒）
+         │                           3. &lt;span style=&#34;color:#fb923c&#34;&gt;常規胰島素＋葡萄糖&lt;/span&gt;
+         │                           4. &lt;span style=&#34;color:#fb923c&#34;&gt;albuterol&lt;/span&gt; 霧化
+         │                           5. 如上述無效 → 透析
+</code></pre><hr>
+<h3 id="e-鈣ca">E. 鈣（Ca²⁺）<a hidden class="anchor" aria-hidden="true" href="#e-鈣ca">#</a></h3>
+<table>
+  <thead>
+      <tr>
+          <th>狀態</th>
+          <th>定義</th>
+          <th>臨床表徵</th>
+          <th>管理</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><span style="color:#60a5fa">低血鈣</span></td>
+          <td>總鈣 <span style="color:#34d399">8.5 mg/dL</span> 或游離鈣 <span style="color:#34d399">4.5 mg/dL</span></td>
+          <td><span style="color:#60a5fa">四肢抽搐（tetany）</span>、感覺異常、癲癇、<span style="color:#f87171">喉痙攣</span>、心律不整</td>
+          <td>急性：IV <span style="color:#fb923c">葡萄糖酸鈣</span>；慢性：口服鈣補充製劑</td>
+      </tr>
+      <tr>
+          <td><span style="color:#60a5fa">高血鈣</span></td>
+          <td>總鈣 &gt; <span style="color:#34d399">10.5 mg/dL</span></td>
+          <td>無力、易怒、癲癇、昏迷、腹痛、<span style="color:#60a5fa">腎結石、胰臟炎</span></td>
+          <td>增加尿量、<span style="color:#fb923c">furosemide</span>利尿、嚴重時透析</td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>低血鈣特殊考量：</strong></p>
+<ul>
+<li>白蛋白校正：白蛋白每下降 1 g/dL，總鈣下降約 0.8 mg/dL</li>
+<li><span style="color:#f87171">頑固性低血鈣需排除低鎂血症</span></li>
+<li>高磷酸鹽血症應先於低血鈣糾正（避免腎結石或軟組織鈣化）</li>
+</ul>
+<hr>
+<h3 id="f-鎂mg">F. 鎂（Mg²⁺）<a hidden class="anchor" aria-hidden="true" href="#f-鎂mg">#</a></h3>
+<table>
+  <thead>
+      <tr>
+          <th>狀態</th>
+          <th>數值</th>
+          <th>臨床表徵</th>
+          <th>管理</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><span style="color:#60a5fa">低鎂血症</span></td>
+          <td><span style="color:#34d399">&lt;0.7 mg/dL</span></td>
+          <td>食慾不振、噁心、無力、<span style="color:#f87171">心電圖：T波平坦、ST段延長</span></td>
+          <td>急性：IV <span style="color:#fb923c">硫酸鎂</span>；慢性：口服氧化鎂</td>
+      </tr>
+      <tr>
+          <td><span style="color:#60a5fa">高鎂血症</span></td>
+          <td>&gt; <span style="color:#34d399">4.5 mg/dL</span></td>
+          <td><span style="color:#f87171">低張力、反射降低、癱瘓、意識障礙、低血壓；&gt;15 mg/dL 可致呼吸衰竭和心搏停止</span></td>
+          <td>停用補充鎂、利尿、<span style="color:#fb923c">氯化鈣</span>（嚴重時）</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h2 id="iii-酸鹼平衡">III. 酸鹼平衡<a hidden class="anchor" aria-hidden="true" href="#iii-酸鹼平衡">#</a></h2>
+<h3 id="a-評估流程">A. 評估流程<a hidden class="anchor" aria-hidden="true" href="#a-評估流程">#</a></h3>
+<table>
+  <thead>
+      <tr>
+          <th>步驟</th>
+          <th>內容</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>1. 確定pH</strong></td>
+          <td><span style="color:#34d399">酸血症 pH &lt; 7.35</span> 或 <span style="color:#34d399">鹼血症 pH &gt; 7.45</span></td>
+      </tr>
+      <tr>
+          <td><strong>2. 計算陰離子隙（AG）</strong></td>
+          <td>AG = Na⁺ − (Cl⁻ + HCO₃⁻)，正常：<span style="color:#34d399">12 ± 2 mEq/L</span></td>
+      </tr>
+      <tr>
+          <td><strong>3. 計算Delta Gap</strong></td>
+          <td>如有AG升高性酸中毒，判斷是否合併其他代謝異常</td>
+      </tr>
+      <tr>
+          <td><strong>4. 計算滲透壓差距</strong></td>
+          <td>計算值 − 實測值，正常差距 &lt; 6；&gt;10見於<span style="color:#c084fc">甲醇或乙二醇中毒</span></td>
+      </tr>
+      <tr>
+          <td><strong>5. 計算預期代償反應</strong></td>
+          <td>見下表</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="b-陰離子隙ag分類">B. 陰離子隙（AG）分類<a hidden class="anchor" aria-hidden="true" href="#b-陰離子隙ag分類">#</a></h3>
+<table>
+  <thead>
+      <tr>
+          <th>AG範圍</th>
+          <th>類型</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>AG &lt; 12</td>
+          <td>非AG升高性代謝性酸中毒（NAGAMA）</td>
+      </tr>
+      <tr>
+          <td>AG 12-15</td>
+          <td>正常AG</td>
+      </tr>
+      <tr>
+          <td>AG &gt; 15</td>
+          <td>AG升高性代謝性酸中毒（AGMA）</td>
+      </tr>
+      <tr>
+          <td>AG &gt; <span style="color:#34d399">20 mEq/L</span></td>
+          <td>無論pH或HCO₃⁻如何，即為原發性AGMA</td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>AGMA 病因記憶口號（MUDPILES）：</strong></p>
+<ul>
+<li><span style="color:#c084fc">M</span>ethanol（甲醇）、<span style="color:#c084fc">U</span>remia（尿毒症）、<span style="color:#c084fc">D</span>KA、<span style="color:#c084fc">P</span>araldehyde、<span style="color:#c084fc">I</span>soniazid、<span style="color:#c084fc">Iron</span>、<span style="color:#c084fc">L</span>actic acidosis（L型和D型乳酸）、<span style="color:#c084fc">E</span>thylene glycol（乙二醇）、<span style="color:#c084fc">R</span>habdomyolysis、<span style="color:#c084fc">S</span>alicylates</li>
+</ul>
+<h3 id="c-預期代償反應">C. 預期代償反應<a hidden class="anchor" aria-hidden="true" href="#c-預期代償反應">#</a></h3>
+<table>
+  <thead>
+      <tr>
+          <th>障礙類型</th>
+          <th>主要變化</th>
+          <th>預期代償</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>急性呼吸性酸中毒</td>
+          <td>PaCO₂ ↑ 10 mmHg</td>
+          <td>HCO₃⁻ ↑ <span style="color:#34d399">1 mEq/L</span></td>
+      </tr>
+      <tr>
+          <td>慢性呼吸性酸中毒</td>
+          <td>PaCO₂ ↑ 10 mmHg</td>
+          <td>HCO₃⁻ ↑ <span style="color:#34d399">4 mEq/L</span></td>
+      </tr>
+      <tr>
+          <td>代謝性酸中毒</td>
+          <td>HCO₃⁻ ↓ 10 mEq/L</td>
+          <td>PaCO₂ ↓ <span style="color:#34d399">1.5 × [HCO₃⁻] + 8 ± 2</span></td>
+      </tr>
+      <tr>
+          <td>代謝性鹼中毒</td>
+          <td>HCO₃⁻ ↑ 10 mEq/L</td>
+          <td>PaCO₂ ↑ <span style="color:#34d399">7 mmHg</span></td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h2 id="iv-重要參考數值">IV. 重要參考數值<a hidden class="anchor" aria-hidden="true" href="#iv-重要參考數值">#</a></h2>
+<table>
+  <thead>
+      <tr>
+          <th>參數</th>
+          <th>正常值</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>血清滲透壓</td>
+          <td><span style="color:#34d399">285–295 mOsm/kg</span></td>
+      </tr>
+      <tr>
+          <td>血清鈉</td>
+          <td><span style="color:#34d399">135–145 mEq/L</span></td>
+      </tr>
+      <tr>
+          <td>血清鉀</td>
+          <td><span style="color:#34d399">3.5–5.0 mEq/L</span></td>
+      </tr>
+      <tr>
+          <td>血清鈣（總）</td>
+          <td><span style="color:#34d399">8.5–10.5 mg/dL</span></td>
+      </tr>
+      <tr>
+          <td>血鎂</td>
+          <td><span style="color:#34d399">1.5–2.5 mg/dL</span></td>
+      </tr>
+      <tr>
+          <td>陰離子隙</td>
+          <td><span style="color:#34d399">12 ± 2 mEq/L</span></td>
+      </tr>
+      <tr>
+          <td>維持鉀需求（無高血鉀或腎衰竭時）</td>
+          <td><span style="color:#34d399">20 mEq/L 輸液</span></td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<blockquote>
+<p><strong>⚠️ 臨床警告</strong></p>
+<ul>
+<li>低血鈉與高血鈉的<span style="color:#f87171">糾正速度過快</span>都可能造成嚴重神經學後遺症（分別為滲透性脫髓鞘症候群和腦水腫）</li>
+<li>鉀的靜脈補充<span style="color:#f87171">絕對不可超過 1 mEq/kg/hr</span></li>
+<li>高血鉀時，<span style="color:#f87171">心電圖變化優先於數值</span>——有心電圖異常時立即給予葡萄糖酸鈣</span></li>
+<li>新生兒（&lt;14天）不適用Holliday-Segar公式</li>
+</ul>
+</blockquote>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="https://b101108063-ops.github.io/Harriet_lane/">Harriet Lane Handbook</a></span> · 
+
+    
+    
+    <span>
+        Powered by
+        <a href="https://gohugo.io/?utm_source=papermod" rel="noopener" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" id="top-link" class="top-link hidden" aria-label="go to top" title="Go to Top (Alt + G)" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-up">
+        <polyline points="17 11 12 6 7 11"></polyline>
+        <polyline points="17 18 12 13 7 18"></polyline>
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var toplink = document.getElementById("top-link");
+    window.onscroll = function () {
+        const scrollThreshold = window.innerHeight;
+        if (document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold) {
+            toplink.classList.remove("hidden");
+        } else {
+            toplink.classList.add("hidden");
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>
