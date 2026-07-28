@@ -31,15 +31,90 @@ body { font-size: 14px; line-height: 1.5; }
 <div class="main-content">
 <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 0.75rem;">
 {{- $pages := .Site.RegularPages -}}
-{{- range $pages.ByWeight -}}
-<div class="post-item">
-  <a href="{{ .RelPermalink }}">
-    <div class="card">
-      <h2>{{ .Title }}</h2>
-    </div>
-  </a>
-</div>
+{{- $pages = slice -}}
+{{- range $pages -}}
+  {{- $w := .Params.weight | default "99" -}}
+  {{- $n := 0 -}}
+  {{- if eq (printf "%T" $w) "string" -}}
+    {{- $n = $w | int -}}
+  {{- else -}}
+    {{- $n = $w -}}
+  {{- end -}}
+  {{- $pages = $pages | append (dict "page" . "weight" $n) -}}
 {{- end -}}
+{{- $sorted := slice -}}
+{{- range $pages -}}
+  {{- $sorted = $sorted | append .page -}}
+{{- end -}}
+{{- $sorted = first 1 $sorted -}}
+{{- range $pages -}}
+  {{- range first 1 (where $sorted "Params.weight" "==" .weight) -}}
+  {{- end -}}
+{{- end -}}
+
+{{- $p01 := where $pages "weight" 1 -}}
+{{- $p02 := where $pages "weight" 2 -}}
+{{- $p03 := where $pages "weight" 3 -}}
+{{- $p04 := where $pages "weight" 4 -}}
+{{- $p05 := where $pages "weight" 5 -}}
+{{- $p06 := where $pages "weight" 6 -}}
+{{- $p07 := where $pages "weight" 7 -}}
+{{- $p08 := where $pages "weight" 8 -}}
+{{- $p09 := where $pages "weight" 9 -}}
+{{- $p10 := where $pages "weight" 10 -}}
+{{- $p11 := where $pages "weight" 11 -}}
+{{- $p12 := where $pages "weight" 12 -}}
+{{- $p13 := where $pages "weight" 13 -}}
+{{- $p14 := where $pages "weight" 14 -}}
+{{- $p15 := where $pages "weight" 15 -}}
+{{- $p16 := where $pages "weight" 16 -}}
+{{- $p17 := where $pages "weight" 17 -}}
+{{- $p18 := where $pages "weight" 18 -}}
+{{- $p19 := where $pages "weight" 19 -}}
+{{- $p20 := where $pages "weight" 20 -}}
+{{- $p21 := where $pages "weight" 21 -}}
+{{- $p22 := where $pages "weight" 22 -}}
+{{- $p23 := where $pages "weight" 23 -}}
+{{- $p24 := where $pages "weight" 24 -}}
+{{- $p25 := where $pages "weight" 25 -}}
+{{- $p26 := where $pages "weight" 26 -}}
+{{- $p27 := where $pages "weight" 27 -}}
+{{- $p28 := where $pages "weight" 28 -}}
+{{- $p29 := where $pages "weight" 29 -}}
+{{- $p30 := where $pages "weight" 30 -}}
+{{- $p31 := where $pages "weight" 31 -}}
+
+{{- range $p01 -}}<div class="post-item"><a href="{{ .RelPermalink }}"><div class="card"><h2>{{ .Title }}</h2></div></a></div>{{- end -}}
+{{- range $p02 -}}<div class="post-item"><a href="{{ .RelPermalink }}"><div class="card"><h2>{{ .Title }}</h2></div></a></div>{{- end -}}
+{{- range $p03 -}}<div class="post-item"><a href="{{ .RelPermalink }}"><div class="card"><h2>{{ .Title }}</h2></div></a></div>{{- end -}}
+{{- range $p04 -}}<div class="post-item"><a href="{{ .RelPermalink }}"><div class="card"><h2>{{ .Title }}</h2></div></a></div>{{- end -}}
+{{- range $p05 -}}<div class="post-item"><a href="{{ .RelPermalink }}"><div class="card"><h2>{{ .Title }}</h2></div></a></div>{{- end -}}
+{{- range $p06 -}}<div class="post-item"><a href="{{ .RelPermalink }}"><div class="card"><h2>{{ .Title }}</h2></div></a></div>{{- end -}}
+{{- range $p07 -}}<div class="post-item"><a href="{{ .RelPermalink }}"><div class="card"><h2>{{ .Title }}</h2></div></a></div>{{- end -}}
+{{- range $p08 -}}<div class="post-item"><a href="{{ .RelPermalink }}"><div class="card"><h2>{{ .Title }}</h2></div></a></div>{{- end -}}
+{{- range $p09 -}}<div class="post-item"><a href="{{ .RelPermalink }}"><div class="card"><h2>{{ .Title }}</h2></div></a></div>{{- end -}}
+{{- range $p10 -}}<div class="post-item"><a href="{{ .RelPermalink }}"><div class="card"><h2>{{ .Title }}</h2></div></a></div>{{- end -}}
+{{- range $p11 -}}<div class="post-item"><a href="{{ .RelPermalink }}"><div class="card"><h2>{{ .Title }}</h2></div></a></div>{{- end -}}
+{{- range $p12 -}}<div class="post-item"><a href="{{ .RelPermalink }}"><div class="card"><h2>{{ .Title }}</h2></div></a></div>{{- end -}}
+{{- range $p13 -}}<div class="post-item"><a href="{{ .RelPermalink }}"><div class="card"><h2>{{ .Title }}</h2></div></a></div>{{- end -}}
+{{- range $p14 -}}<div class="post-item"><a href="{{ .RelPermalink }}"><div class="card"><h2>{{ .Title }}</h2></div></a></div>{{- end -}}
+{{- range $p15 -}}<div class="post-item"><a href="{{ .RelPermalink }}"><div class="card"><h2>{{ .Title }}</h2></div></a></div>{{- end -}}
+{{- range $p16 -}}<div class="post-item"><a href="{{ .RelPermalink }}"><div class="card"><h2>{{ .Title }}</h2></div></a></div>{{- end -}}
+{{- range $p17 -}}<div class="post-item"><a href="{{ .RelPermalink }}"><div class="card"><h2>{{ .Title }}</h2></div></a></div>{{- end -}}
+{{- range $p18 -}}<div class="post-item"><a href="{{ .RelPermalink }}"><div class="card"><h2>{{ .Title }}</h2></div></a></div>{{- end -}}
+{{- range $p19 -}}<div class="post-item"><a href="{{ .RelPermalink }}"><div class="card"><h2>{{ .Title }}</h2></div></a></div>{{- end -}}
+{{- range $p20 -}}<div class="post-item"><a href="{{ .RelPermalink }}"><div class="card"><h2>{{ .Title }}</h2></div></a></div>{{- end -}}
+{{- range $p21 -}}<div class="post-item"><a href="{{ .RelPermalink }}"><div class="card"><h2>{{ .Title }}</h2></div></a></div>{{- end -}}
+{{- range $p22 -}}<div class="post-item"><a href="{{ .RelPermalink }}"><div class="card"><h2>{{ .Title }}</h2></div></a></div>{{- end -}}
+{{- range $p23 -}}<div class="post-item"><a href="{{ .RelPermalink }}"><div class="card"><h2>{{ .Title }}</h2></div></a></div>{{- end -}}
+{{- range $p24 -}}<div class="post-item"><a href="{{ .RelPermalink }}"><div class="card"><h2>{{ .Title }}</h2></div></a></div>{{- end -}}
+{{- range $p25 -}}<div class="post-item"><a href="{{ .RelPermalink }}"><div class="card"><h2>{{ .Title }}</h2></div></a></div>{{- end -}}
+{{- range $p26 -}}<div class="post-item"><a href="{{ .RelPermalink }}"><div class="card"><h2>{{ .Title }}</h2></div></a></div>{{- end -}}
+{{- range $p27 -}}<div class="post-item"><a href="{{ .RelPermalink }}"><div class="card"><h2>{{ .Title }}</h2></div></a></div>{{- end -}}
+{{- range $p28 -}}<div class="post-item"><a href="{{ .RelPermalink }}"><div class="card"><h2>{{ .Title }}</h2></div></a></div>{{- end -}}
+{{- range $p29 -}}<div class="post-item"><a href="{{ .RelPermalink }}"><div class="card"><h2>{{ .Title }}</h2></div></a></div>{{- end -}}
+{{- range $p30 -}}<div class="post-item"><a href="{{ .RelPermalink }}"><div class="card"><h2>{{ .Title }}</h2></div></a></div>{{- end -}}
+{{- range $p31 -}}<div class="post-item"><a href="{{ .RelPermalink }}"><div class="card"><h2>{{ .Title }}</h2></div></a></div>{{- end -}}
 </div>
 </div>
 {{- end -}}
