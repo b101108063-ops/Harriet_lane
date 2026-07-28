@@ -185,10 +185,15 @@ body { font-size: 14px; line-height: 1.5; }
 var fuse;
 var pages = [];
 
+function getBaseUrl() {
+  var base = '/Harriet_lane/';
+  return base;
+}
+
 async function init() {
   document.getElementById('status').textContent = '載入搜尋索引...';
   try {
-    var res = await fetch('/index.json');
+    var res = await fetch(getBaseUrl() + 'index.json');
     if (!res.ok) throw new Error('HTTP ' + res.status);
     pages = await res.json();
     fuse = new Fuse(pages, {
