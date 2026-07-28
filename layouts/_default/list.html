@@ -1,10 +1,11 @@
 {{- define "main" -}}
 <style>
-.post-item { margin-bottom: 1rem; }
+body { font-size: 14px; line-height: 1.5; }
+.post-item { margin-bottom: 0.75rem; }
 .post-item .card {
   border: 1px solid #333;
   border-radius: 8px;
-  padding: 1.2rem;
+  padding: 0.8rem 1rem;
   background: #1e1e1e;
   transition: all 0.2s;
 }
@@ -14,7 +15,8 @@
 }
 .post-item .card h2 {
   margin: 0;
-  font-size: 1.1rem;
+  font-size: 0.95rem;
+  font-weight: 600;
 }
 .post-item .card a {
   text-decoration: none;
@@ -23,9 +25,11 @@
 .post-item .card a:hover {
   color: #60a5fa;
 }
+.main-content { max-width: 100%; padding: 1rem; }
 </style>
 
-<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1rem;">
+<div class="main-content">
+<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 0.75rem;">
 {{- range .Site.Home.Pages -}}
 <div class="post-item">
   <a href="{{ .RelPermalink }}">
@@ -35,5 +39,6 @@
   </a>
 </div>
 {{- end -}}
+</div>
 </div>
 {{- end -}}
