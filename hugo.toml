@@ -10,6 +10,19 @@ theme = 'PaperMod'
     [markup.goldmark.extensions]
       headingIDs = false
 
+[menu]
+  [[menu.main]]
+    identifier = "home"
+    name = "Home"
+    url = "/"
+    weight = 5
+
+  [[menu.main]]
+    identifier = "search"
+    name = "Search"
+    url = "/search/"
+    weight = 10
+
 [frontmatter]
 date = ["date", "publishDate", "lastmod"]
 

@@ -1,0 +1,64 @@
+{{- define "main" -}}
+<style>
+.search-box { max-width: 600px; margin: 2rem auto; }
+#search-input { width: 100%; padding: 1rem; font-size: 1.1rem; border: 1px solid #333; border-radius: 8px; background: #1e1e1e; color: #e0e0e0; }
+#search-results { margin-top: 1.5rem; }
+.search-result { padding: 1rem; margin-bottom: 0.5rem; background: #1e1e1e; border: 1px solid #333; border-radius: 8px; }
+.search-result a { color: #60a5fa; text-decoration: none; font-size: 1.1rem; }
+.search-result a:hover { color: #93c5fd; }
+.search-result p { margin: 0.3rem 0 0 0; color: #888; font-size: 0.9rem; }
+.no-results { color: #888; text-align: center; padding: 2rem; }
+</style>
+
+<div class="search-box">
+  <input type="text" id="search-input" placeholder="Search chapters..." oninput="search()">
+  <div id="search-results"></div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0"></script>
+<script>
+var fuse;
+var jsonData = [];
+
+async function loadSearch() {
+  var res = await fetch('/index.json');
+  jsonData = await res.json();
+  fuse = new Fuse(jsonData, {
+    keys: ['Title', 'Summary'],
+    includeMatches: true,
+    threshold: 0.4
+  });
+}
+
+function search() {
+  var query = document.getElementById('search-input').value.trim();
+  var resultsDiv = document.getElementById('search-results');
+  
+  if (!query) {
+    resultsDiv.innerHTML = '';
+    return;
+  }
+  
+  if (!fuse) {
+    resultsDiv.innerHTML = '<p class="no-results">Loading...</p>';
+    return;
+  }
+  
+  var results = fuse.search(query).slice(0, 10);
+  
+  if (results.length === 0) {
+    resultsDiv.innerHTML = '<p class="no-results">No results found</p>';
+    return;
+  }
+  
+  var html = '';
+  for (var i = 0; i < results.length; i++) {
+    var r = results[i];
+    html += '<div class="search-result"><a href="' + r.item.Permalink + '">' + r.item.Title + '</a></div>';
+  }
+  resultsDiv.innerHTML = html;
+}
+
+loadSearch();
+</script>
+{{- end -}}
