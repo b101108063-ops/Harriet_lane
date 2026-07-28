@@ -1,18 +1,48 @@
 {{- define "main" -}}
 <style>
-.search-box { max-width: 600px; margin: 2rem auto; }
-#search-input { width: 100%; padding: 1rem; font-size: 1.1rem; border: 1px solid #333; border-radius: 8px; background: #1e1e1e; color: #e0e0e0; }
-#search-results { margin-top: 1.5rem; }
-.search-result { padding: 1rem; margin-bottom: 0.5rem; background: #1e1e1e; border: 1px solid #333; border-radius: 8px; }
-.search-result a { color: #60a5fa; text-decoration: none; font-size: 1.1rem; }
+body { font-size: 14px; line-height: 1.5; }
+.search-box { max-width: 600px; margin: 1rem auto; }
+#search-input { width: 100%; padding: 0.8rem; font-size: 1rem; border: 1px solid #333; border-radius: 8px; background: #1e1e1e; color: #e0e0e0; box-sizing: border-box; }
+#search-results { margin-top: 1rem; }
+.search-result { padding: 0.8rem; margin-bottom: 0.5rem; background: #1e1e1e; border: 1px solid #333; border-radius: 8px; }
+.search-result a { color: #60a5fa; text-decoration: none; font-size: 0.95rem; }
 .search-result a:hover { color: #93c5fd; }
-.search-result p { margin: 0.3rem 0 0 0; color: #888; font-size: 0.9rem; }
-.no-results { color: #888; text-align: center; padding: 2rem; }
+.no-results { color: #888; text-align: center; padding: 1rem; }
+.post-item { margin-bottom: 0.5rem; }
+.post-item .card {
+  border: 1px solid #333;
+  border-radius: 6px;
+  padding: 0.6rem 0.8rem;
+  background: #1e1e1e;
+  transition: all 0.2s;
+}
+.post-item .card:hover { border-color: #60a5fa; }
+.post-item .card h2 { margin: 0; font-size: 0.9rem; }
+.post-item .card a { text-decoration: none; color: #e0e0e0; }
+.post-item .card a:hover { color: #60a5fa; }
+.main-content { max-width: 100%; padding: 1rem; }
+.section-title { color: #888; font-size: 0.85rem; margin: 1rem 0 0.5rem 0; text-transform: uppercase; letter-spacing: 1px; }
 </style>
 
+<div class="main-content">
+<p class="section-title">Search</p>
 <div class="search-box">
   <input type="text" id="search-input" placeholder="Search chapters..." oninput="search()">
   <div id="search-results"></div>
+</div>
+
+<p class="section-title">All Chapters</p>
+<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 0.5rem;">
+{{- range .Site.RegularPages.ByWeight -}}
+<div class="post-item">
+  <a href="{{ .RelPermalink }}">
+    <div class="card">
+      <h2>{{ .Title }}</h2>
+    </div>
+  </a>
+</div>
+{{- end -}}
+</div>
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0"></script>
