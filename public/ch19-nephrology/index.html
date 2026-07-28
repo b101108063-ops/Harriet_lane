@@ -1,279 +1,26 @@
-<!DOCTYPE html>
-<html lang="en" dir="auto" data-theme="auto">
+<style>
+body { font-size: 14px; line-height: 1.6; }
+h1 { font-size: 1.4rem; font-weight: 600; margin-bottom: 1rem; color: #e0e0e0; }
+h2 { font-size: 1.15rem; font-weight: 600; margin: 1.5rem 0 0.5rem 0; color: #60a5fa; }
+h3 { font-size: 1rem; font-weight: 600; margin: 1rem 0 0.3rem 0; color: #e0e0e0; }
+h4 { font-size: 0.95rem; font-weight: 600; margin: 0.8rem 0 0.3rem 0; color: #c0c0c0; }
+p, li { font-size: 14px; margin: 0.5rem 0; color: #b0b0b0; }
+strong { color: #e0e0e0; font-weight: 600; }
+.main-content { max-width: 800px; margin: 0 auto; padding: 1rem; }
+</style>
 
-<head><meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="index, follow">
-<title>Chapter 19: Nephrology | Harriet Lane Handbook</title>
-<meta name="keywords" content="">
-<meta name="description" content="
-章節導讀摘要
-本章涵蓋小兒腎臟科的核心議題，包括尿液分析判讀、腎絲球濾過率（GFR）評估與估算公式、高血壓的診斷與治療、泌尿道感染的處理、蛋白尿與血尿的鑑別診斷、急性腎損傷的分類與治療，以及腎病症候群的診療原則。內容強調數值標準、疾病分類與臨床決策 cutoffs，適用於門診與住院照護情境。
-
-
-I. 尿液分析（Urinalysis）
-A. 適應症
-泌尿道感染（UTI）、腎炎、創傷、糖尿病、橫紋肌溶解症、水腫、生長遲緩。
-B. 採檢注意事項
-尿液應於排尿後 1 小時內 送驗，否則需冷藏於 4°C。美國兒科醫學會（AAP）不建議常規年度篩檢，除非為慢性腎病高風險族群。
-C. 尿液分析項目
-
-  
-      
-          項目
-          正常值
-          異常意義
-      
-  
-  
-      
-          外觀
-          無色至琥珀色
-          雲濁可能正常（尿酸結晶、磷酸鹽結晶、感染物質）
-      
-      
-          比重
-          1.003–1.030
-          等張尿（1.010）＝水分調節異常
-      
-      
-          pH 值
-          4.5–8.0（平均 5–6）
-          檸檬酸尿見於 UTI（尿素分解菌）或結石
-      
-      
-          蛋白
-          陰性
-          1&#43; ≈ 30 mg/dL；4&#43; &gt; 1000 mg/dL
-      
-      
-          葡萄糖
-          陰性
-          血糖 &gt; 160–180 mg/dL 時出現
-      
-      
-          酮體
-          陰性至些許
-          可見於糖尿病酮酸血症或飢餓
-      
-      
-          亞硝酸鹽
-          陰性
-          對 革蘭氏陰性菌（如 大腸桿菌、克雷伯氏菌、變形菌）特異性 90–100%，敏感性 15–82%
-      
-      
-          白血球酯酶
-          陰性
-          對 UTI 敏感性 67–84%，特異性 64–92%
-      
-      
-          血紅素
-          陰性
-          陽性可能為血尿或肌球蛋白尿（擠壓傷）
-      
-      
-          紅血球
-          &lt;5 RBCs/hpf（離心尿）
-          變形紅血球暗示腎絲球源；正常型態暗示下泌尿路
-      
-      
-          白血球
-          &lt;5 WBCs/hpf（離心尿）
-          &gt;5 見於 UTI、無菌性膿尿（如川崎氏病）
-      
-  
-
-
-II. 腎功能測試
-A. 腎絲球功能測試
-1. 腎絲球發育
-腎絲球發育於妊娠 36 週完成。GFR 在出生後前 2 年隨腎絲球成熟而增加。">
-<meta name="author" content="">
-<link rel="canonical" href="https://b101108063-ops.github.io/Harriet_lane/ch19-nephrology/">
-<link crossorigin="anonymous" href="/Harriet_lane/assets/css/stylesheet.6ff46447b1fa3f8a5cc0bcae48088decc3ae37f5fbc99406a3aefc3bf0e6044a.css" integrity="sha256-b/RkR7H6P4pcwLyuSAiN7MOuN/X7yZQGo678O/DmBEo=" rel="preload stylesheet" as="style">
-<link rel="icon" href="https://b101108063-ops.github.io/Harriet_lane/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="https://b101108063-ops.github.io/Harriet_lane/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://b101108063-ops.github.io/Harriet_lane/favicon-32x32.png">
-<link rel="apple-touch-icon" href="https://b101108063-ops.github.io/Harriet_lane/apple-touch-icon.png">
-<link rel="mask-icon" href="https://b101108063-ops.github.io/Harriet_lane/safari-pinned-tab.svg">
-<meta name="theme-color" content="#2e2e33">
-<meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="https://b101108063-ops.github.io/Harriet_lane/ch19-nephrology/">
-<noscript>
-    <style>
-        #theme-toggle,
-        .top-link {
-            display: none;
-        }
-
-    </style>
-    <style>
-        @media (prefers-color-scheme: dark) {
-            :root {
-                --theme: rgb(29, 30, 32);
-                --entry: rgb(46, 46, 51);
-                --primary: rgb(218, 218, 219);
-                --secondary: rgb(155, 156, 157);
-                --tertiary: rgb(65, 66, 68);
-                --content: rgb(196, 196, 197);
-                --code-block-bg: rgb(46, 46, 51);
-                --code-bg: rgb(55, 56, 62);
-                --border: rgb(51, 51, 51);
-                color-scheme: dark;
-            }
-
-            .list {
-                background: var(--theme);
-            }
-
-            .toc {
-                background: var(--entry);
-            }
-        }
-
-    </style>
-</noscript>
-<script>
-    if (localStorage.getItem("pref-theme") === "dark") {
-        document.querySelector("html").dataset.theme = 'dark';
-    } else if (localStorage.getItem("pref-theme") === "light") {
-       document.querySelector("html").dataset.theme = 'light';
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.querySelector("html").dataset.theme = 'dark';
-    } else {
-        document.querySelector("html").dataset.theme = 'light';
-    }
-
-</script><meta property="og:url" content="https://b101108063-ops.github.io/Harriet_lane/ch19-nephrology/">
-  <meta property="og:site_name" content="Harriet Lane Handbook">
-  <meta property="og:title" content="Chapter 19: Nephrology">
-  <meta property="og:description" content="章節導讀摘要 本章涵蓋小兒腎臟科的核心議題，包括尿液分析判讀、腎絲球濾過率（GFR）評估與估算公式、高血壓的診斷與治療、泌尿道感染的處理、蛋白尿與血尿的鑑別診斷、急性腎損傷的分類與治療，以及腎病症候群的診療原則。內容強調數值標準、疾病分類與臨床決策 cutoffs，適用於門診與住院照護情境。
-I. 尿液分析（Urinalysis） A. 適應症 泌尿道感染（UTI）、腎炎、創傷、糖尿病、橫紋肌溶解症、水腫、生長遲緩。
-B. 採檢注意事項 尿液應於排尿後 1 小時內 送驗，否則需冷藏於 4°C。美國兒科醫學會（AAP）不建議常規年度篩檢，除非為慢性腎病高風險族群。
-C. 尿液分析項目 項目 正常值 異常意義 外觀 無色至琥珀色 雲濁可能正常（尿酸結晶、磷酸鹽結晶、感染物質） 比重 1.003–1.030 等張尿（1.010）＝水分調節異常 pH 值 4.5–8.0（平均 5–6） 檸檬酸尿見於 UTI（尿素分解菌）或結石 蛋白 陰性 1&#43; ≈ 30 mg/dL；4&#43; &gt; 1000 mg/dL 葡萄糖 陰性 血糖 &gt; 160–180 mg/dL 時出現 酮體 陰性至些許 可見於糖尿病酮酸血症或飢餓 亞硝酸鹽 陰性 對 革蘭氏陰性菌（如 大腸桿菌、克雷伯氏菌、變形菌）特異性 90–100%，敏感性 15–82% 白血球酯酶 陰性 對 UTI 敏感性 67–84%，特異性 64–92% 血紅素 陰性 陽性可能為血尿或肌球蛋白尿（擠壓傷） 紅血球 &lt;5 RBCs/hpf（離心尿） 變形紅血球暗示腎絲球源；正常型態暗示下泌尿路 白血球 &lt;5 WBCs/hpf（離心尿） &gt;5 見於 UTI、無菌性膿尿（如川崎氏病） II. 腎功能測試 A. 腎絲球功能測試 1. 腎絲球發育 腎絲球發育於妊娠 36 週完成。GFR 在出生後前 2 年隨腎絲球成熟而增加。">
-  <meta property="og:locale" content="en_us">
-  <meta property="og:type" content="article">
-
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Chapter 19: Nephrology">
-  <meta name="twitter:description" content="章節導讀摘要 本章涵蓋小兒腎臟科的核心議題，包括尿液分析判讀、腎絲球濾過率（GFR）評估與估算公式、高血壓的診斷與治療、泌尿道感染的處理、蛋白尿與血尿的鑑別診斷、急性腎損傷的分類與治療，以及腎病症候群的診療原則。內容強調數值標準、疾病分類與臨床決策 cutoffs，適用於門診與住院照護情境。
-I. 尿液分析（Urinalysis） A. 適應症 泌尿道感染（UTI）、腎炎、創傷、糖尿病、橫紋肌溶解症、水腫、生長遲緩。
-B. 採檢注意事項 尿液應於排尿後 1 小時內 送驗，否則需冷藏於 4°C。美國兒科醫學會（AAP）不建議常規年度篩檢，除非為慢性腎病高風險族群。
-C. 尿液分析項目 項目 正常值 異常意義 外觀 無色至琥珀色 雲濁可能正常（尿酸結晶、磷酸鹽結晶、感染物質） 比重 1.003–1.030 等張尿（1.010）＝水分調節異常 pH 值 4.5–8.0（平均 5–6） 檸檬酸尿見於 UTI（尿素分解菌）或結石 蛋白 陰性 1&#43; ≈ 30 mg/dL；4&#43; &gt; 1000 mg/dL 葡萄糖 陰性 血糖 &gt; 160–180 mg/dL 時出現 酮體 陰性至些許 可見於糖尿病酮酸血症或飢餓 亞硝酸鹽 陰性 對 革蘭氏陰性菌（如 大腸桿菌、克雷伯氏菌、變形菌）特異性 90–100%，敏感性 15–82% 白血球酯酶 陰性 對 UTI 敏感性 67–84%，特異性 64–92% 血紅素 陰性 陽性可能為血尿或肌球蛋白尿（擠壓傷） 紅血球 &lt;5 RBCs/hpf（離心尿） 變形紅血球暗示腎絲球源；正常型態暗示下泌尿路 白血球 &lt;5 WBCs/hpf（離心尿） &gt;5 見於 UTI、無菌性膿尿（如川崎氏病） II. 腎功能測試 A. 腎絲球功能測試 1. 腎絲球發育 腎絲球發育於妊娠 36 週完成。GFR 在出生後前 2 年隨腎絲球成熟而增加。">
-
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position":  1 ,
-      "name": "Chapter 19: Nephrology",
-      "item": "https://b101108063-ops.github.io/Harriet_lane/ch19-nephrology/"
-    }
-  ]
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": "Chapter 19: Nephrology",
-  "name": "Chapter 19: Nephrology",
-  "description": " 章節導讀摘要 本章涵蓋小兒腎臟科的核心議題，包括尿液分析判讀、腎絲球濾過率（GFR）評估與估算公式、高血壓的診斷與治療、泌尿道感染的處理、蛋白尿與血尿的鑑別診斷、急性腎損傷的分類與治療，以及腎病症候群的診療原則。內容強調數值標準、疾病分類與臨床決策 cutoffs，適用於門診與住院照護情境。\nI. 尿液分析（Urinalysis） A. 適應症 泌尿道感染（UTI）、腎炎、創傷、糖尿病、橫紋肌溶解症、水腫、生長遲緩。\nB. 採檢注意事項 尿液應於排尿後 1 小時內 送驗，否則需冷藏於 4°C。美國兒科醫學會（AAP）不建議常規年度篩檢，除非為慢性腎病高風險族群。\nC. 尿液分析項目 項目 正常值 異常意義 外觀 無色至琥珀色 雲濁可能正常（尿酸結晶、磷酸鹽結晶、感染物質） 比重 1.003–1.030 等張尿（1.010）＝水分調節異常 pH 值 4.5–8.0（平均 5–6） 檸檬酸尿見於 UTI（尿素分解菌）或結石 蛋白 陰性 1+ ≈ 30 mg/dL；4+ \u0026gt; 1000 mg/dL 葡萄糖 陰性 血糖 \u0026gt; 160–180 mg/dL 時出現 酮體 陰性至些許 可見於糖尿病酮酸血症或飢餓 亞硝酸鹽 陰性 對 革蘭氏陰性菌（如 大腸桿菌、克雷伯氏菌、變形菌）特異性 90–100%，敏感性 15–82% 白血球酯酶 陰性 對 UTI 敏感性 67–84%，特異性 64–92% 血紅素 陰性 陽性可能為血尿或肌球蛋白尿（擠壓傷） 紅血球 \u0026lt;5 RBCs/hpf（離心尿） 變形紅血球暗示腎絲球源；正常型態暗示下泌尿路 白血球 \u0026lt;5 WBCs/hpf（離心尿） \u0026gt;5 見於 UTI、無菌性膿尿（如川崎氏病） II. 腎功能測試 A. 腎絲球功能測試 1. 腎絲球發育 腎絲球發育於妊娠 36 週完成。GFR 在出生後前 2 年隨腎絲球成熟而增加。\n",
-  "keywords": [
-    
-  ],
-  "articleBody": " 章節導讀摘要 本章涵蓋小兒腎臟科的核心議題，包括尿液分析判讀、腎絲球濾過率（GFR）評估與估算公式、高血壓的診斷與治療、泌尿道感染的處理、蛋白尿與血尿的鑑別診斷、急性腎損傷的分類與治療，以及腎病症候群的診療原則。內容強調數值標準、疾病分類與臨床決策 cutoffs，適用於門診與住院照護情境。\nI. 尿液分析（Urinalysis） A. 適應症 泌尿道感染（UTI）、腎炎、創傷、糖尿病、橫紋肌溶解症、水腫、生長遲緩。\nB. 採檢注意事項 尿液應於排尿後 1 小時內 送驗，否則需冷藏於 4°C。美國兒科醫學會（AAP）不建議常規年度篩檢，除非為慢性腎病高風險族群。\nC. 尿液分析項目 項目 正常值 異常意義 外觀 無色至琥珀色 雲濁可能正常（尿酸結晶、磷酸鹽結晶、感染物質） 比重 1.003–1.030 等張尿（1.010）＝水分調節異常 pH 值 4.5–8.0（平均 5–6） 檸檬酸尿見於 UTI（尿素分解菌）或結石 蛋白 陰性 1+ ≈ 30 mg/dL；4+ \u003e 1000 mg/dL 葡萄糖 陰性 血糖 \u003e 160–180 mg/dL 時出現 酮體 陰性至些許 可見於糖尿病酮酸血症或飢餓 亞硝酸鹽 陰性 對 革蘭氏陰性菌（如 大腸桿菌、克雷伯氏菌、變形菌）特異性 90–100%，敏感性 15–82% 白血球酯酶 陰性 對 UTI 敏感性 67–84%，特異性 64–92% 血紅素 陰性 陽性可能為血尿或肌球蛋白尿（擠壓傷） 紅血球 \u003c5 RBCs/hpf（離心尿） 變形紅血球暗示腎絲球源；正常型態暗示下泌尿路 白血球 \u003c5 WBCs/hpf（離心尿） \u003e5 見於 UTI、無菌性膿尿（如川崎氏病） II. 腎功能測試 A. 腎絲球功能測試 1. 腎絲球發育 腎絲球發育於妊娠 36 週完成。GFR 在出生後前 2 年隨腎絲球成熟而增加。\n2. 正常 GFR 值（以菊粉清除率為黃金標準） 年齡 平均 GFR ± SD（mL/min/1.73 m²） 1 週（M 和 F） 41 ± 15 2–8 週（M 和 F） 66 ± 25 \u003e8 週（M 和 F） 96 ± 22 2–12 歲（M 和 F） 133 ± 27 13–21 歲（男性） 140 ± 30 13–21 歲（女性） 126 ± 22 3. 肌酸酐清除率（CCr） $$CCr = [U \\times (V/P)] \\times (1.73/BSA)$$\nU = 尿肌酸酐（mg/dL） V = 分鐘尿量（mL/min，24 小時 = 1440 分鐘） P = 血漿肌酸酐（mg/dL） BSA = 體表面積（m²） 當 GFR 偏低時，CCr 會高估真實 GFR。\n4. 估算 GFR（eGFR）公式 a. CKiD 公式（1–16 歲，適用酵素法） $$eGFR = 0.413 \\times (L / Pcr)$$\nL = 身高（cm），Pcr = 血漿肌酸酐（mg/dL） eGFR ≥ 75 mL/min/1.73 m² 為正常 b. Schwartz 公式（歷史公式） $$eGFR = k \\times (L / Pcr)$$\n年齡 k 值 出生體重低（第一年） 0.33 足月適於胎齡兒（第一年） 0.45 兒童及青少年（女性） 0.55 青少年（男性） 0.70 使用酵素法肌酸酐搭配 Schwartz 公式會高估 GFR。\nc. MDRD / CKD-EPI：用於 \u003e18 歲，2021 年更新移除種族因子。\n5. 其他 GFR 測定 碘西酮、DTPA、Iohexol可用於化療劑量精確調整。胱抑素 C（Cystatin C）較肌酸酐更準確，適用於肌肉質量異常病患。\nB. 腎小管功能測試 1. 近端腎小管：溶質處理 a. 腎小管回收率（Tx） $$Tx = [1 - (Ux/Px) / (UCr/PCr)] \\times 100$$\n常用於計算磷酸鹽回收率（TRP）。低磷酸血症且近端腎小管功能正常時，TRP 應接近 100%。\nb. 鈉排泄分率（FENa） $$FENa = [(UNa/PNa) / (UCr/PCr)] \\times 100$$\n臨床情境 FENa 腎前性氮質血症或腎絲球腎炎 \u003c1% 急性腎小管壞死（ATN）或腎後性氮質血症 \u003e1%（通常 \u003e3%） 脫水嬰兒 \u003c3% FENa 使用利尿劑時可能不準。\nc. 尿素排泄分率（FEurea）：適用於服用利尿劑病患\n腎前性：\u003c35% ATN：\u003e50% d. 碳酸氫鹽排泄分率（FEHCO3） $$FeHCO3 = [(UHCO3/PHCO3) / (UCr/PCr)] \\times 100$$\n正常：\u003c5% 遠端 RTA：通常 \u003c5% 近端 RTA（第二型）：\u003e15% 2. 遠端腎小管：酸鹼平衡 a. 尿陰離子間隙（UAG） $$UAG = UNa + UK - UCl$$\nUAG 正值（通常 \u003e20）：暗示遠端 RTA UAG 負值（通常 \u003c-20）：暗示高尿銨（如腹瀉） b. 尿 pH 值：隨機尿 pH \u003e6 且合併中度代謝性酸中毒時，懷疑遠端 RTA。\nc. 尿滲透壓：理想為早晨第一泡尿。滲透壓 \u003e 600 mOsm/L 時，腎小管功能障礙可能性低。\nd. 尿鈣：高尿鈣見於遠端 RTA、維生素 D 中毒、高血鈣、固定不動、類固醇或Loop 利尿劑使用。\n診斷方式 正常值 24 小時尿鈣 \u003c4 mg/kg/24 小時（黃金標準） 隨機尿鈣/肌酸酐比 依年齡調整（見 Table 19.4） III. 血壓與慢性高血壓 A. 定義 \u003c13 歲：收縮壓或舒張壓 ≥95 百分位 為高血壓 ≥13 歲：≥130/80 mmHg 為高血壓 血壓 \u003e90 百分位或 ≥120/80 應於門診重新測量 B. 測量規範 ≥3 歲：每年測量一次；有高風險者（肥胖、服用升高血壓藥物、腎病、主動脈窄縮、糖尿病）每次就診測量。 \u003c3 歲 有風險因子者（早產 \u003c32 週、小於胎齡、先天性心臟病、腎病家族史、復發性 UTI、惡性腫瘤、移植、使用升高血壓藥物、顱內壓升高）應測量。 測量姿勢：坐姿、上臂置於心臟水平，休息 5 分鐘後測量；氣囊寬度至少為上臂圍的 40%。 C. 各年齡層高血壓病因（Table 19.7） 年齡 最常見原因 新生兒/嬰兒 臍动脉導管術後腎动脉血栓、主動脈窄縮、腎动脉狹窄、支氣管肺發育不良 1–10 歲 腎實質疾病、主動脈窄縮、 essential hypertension（原發性） 11 歲至青少年 essential hypertension（原發性）、腎實質疾病、主動脈窄縮 引起高血壓的藥物：皮質類固醇、Calcineurin 抑制劑（環孢靈、他克莫司）、 Methylphenidate、NSAIDs、 Erythropoietin、古柯鹼、安非他命。\nD. 慢性高血壓評估 實驗室檢查（所有病患）：UA、電解質、肌酸酐、BUN、血脂 肥胖病患：HbA1c、AST/ALT 影像：腎臟超聲（\u003c6 歲或 UA/腎功能異常）、心臟超聲評估左心室肥大 確診建議：24 小時 ABPM（動態血壓監測）為確認高血壓的標準\nE. 高血壓分類與治療（Table 19.8） 分類 \u003c13 歲 ≥13 歲 管理 正常血壓 \u003c90 百分位 \u003c120/\u003c80 每年追蹤 血壓升高 90–\u003c95 百分位 或 120/\u003c80 至 129/\u003c80 120–\u003c130/\u003c80 6 個月後重新測量 第一期 95 百分位至 95 百分位 +12 mmHg 或 130/80–139/89 130/80–139/89 1–2 週後重新測量 第二期 ≥95 百分位 +12 mmHg 或 ≥140/90 ≥140/90 1 週內評估並治療 治療目標：血壓降至 \u003c90 百分位且 \u003c130/80（青少年）；慢性腎病（CKD）病患目標 \u003c50 百分位。\n非藥物治療：有氧運動、鈉限制、戒菸、減重\n藥物治療一線選擇：\nACE 抑制劑（Benazepril、Enalapril、Lisinopril） ARB（Losartan、Candesartan、Valsartan） Thiazide 利尿劑（Hydrochlorothiazide） 長效鈣離子通道阻斷劑（Amlodipine、Isradipine） ACE 抑制劑和ARB禁用於懷孕或雙側腎动脉狹窄。\nIV. 泌尿道感染（Urinary Tract Infections） A. 風險因子 女性風險高於男性 未割包皮的男性風險較高 發燒 ≥39°C 且持續 \u003e1–2 天 B. 尿液收集方式 年齡/情況 收集方式 2 個月至 2 歲，發燒且病得很重 經尿道導尿或恥骨上穿刺 2 個月至 2 歲，發燒但病得輕 導尿最方便；收集袋陽性率 \u003e75%，不應送培養 \u003e2 歲且已訓練如廁 中段清潔尿 C. 診斷標準 收集方式 診斷閾值 導尿或恥骨上穿刺 \u003e50,000 CFU/mL 中段清潔尿 \u003e100,000 CFU/mL 膿尿定義 ≥5 WBCs/hpf D. 常見致病菌 大腸桿菌（E. coli）為最常見 克雷伯氏菌、變形菌、腐生葡萄球菌（S. saprophyticus） 新生兒：B 群鏈球菌 異常宿主：腸球菌、綠膿桿菌 E. 腎盂腎炎 vs. 膀胱炎 腎盂腎炎（上泌尿路感染）特點：\n發燒 ≥38.5°C（尤其抗生素治療 48 小時後仍持續） 全身症狀、肋椎角壓痛 CRP 升高、白血球增多 F. 影像適應症 腎膀胱超聲（RBUS）：2–24 個月有第一線發燒性 UTI、復發性或非典型 UTI、治療 48 小時內無改善 排尿膀胱尿道攝影（VCUG）：RBUS 異常（水腎、疤痕）或復雜性/復發性腎盂腎炎；最佳時機為感染後 2–6 週\nG. 治療 療程：無併發症 3–5 天；腎盂腎炎或中毒病患 7–14 天 路徑：中毒、脫水或無法口服者給予靜脈抗生素 治療失敗：需考慮腎膿瘍或泌尿路阻塞 H. 膀胱輸尿管逆流（VUR）分級 分級 描述 第一級 僅輸尿管逆流 第二級 輸尿管、腎盂、腎盞；無擴張，正常腎盞 第三級 輕度至中度輸尿管擴張/彎曲；輕度腎盂/腎盞擴張，腎盞銳角消失 第四級 中度輸尿管擴張/彎曲；中度腎盂/腎盞擴張，主腎盞乳頭可見 第五級 輸尿管嚴重擴張/彎曲；腎盂/腎盞嚴重擴張，乳頭壓跡不可見 VUR 處理：\nTrimethoprim-sulfamethoxazole 預防性抗生素可降低 UTI 復發風險約 50%，但對腎疤痕無顯著差異 高分級 VUR 持續者可能需手術治療 I. 無症狀菌尿 定義：顯微鏡下可見細菌但無發燒、無症狀、無膿尿。若排尿習慣和泌尿系統正常，不需抗生素治療。\nV. 蛋白尿（Proteinuria） A. 定義 類型 定義 姿勢性蛋白尿 直立時出現大量蛋白，躺下消失；兒童青少年常見，為良性 固定性蛋白尿 連續數日早晨第一泡尿均有蛋白；暗示腎病 微量白蛋白尿 白蛋白低於試紙可測範圍；成人定義 30–300 mg/g creatinine 顯著性蛋白尿 UPr:UCr 比值 0.2–2.0 mg/mg 或 24 小時 collection \u003e 4–40 mg/m²/hr 腎病範圍蛋白尿 UPr:UCr 比值 \u003e2 mg/mg 或 24 小時 \u003e 40 mg/m²/hr 腎病症候群 腎病範圍蛋白尿 + 低白蛋白血症 + 水腫 + 高血脂（膽固醇 \u003e 200 mg/dL） B. 偵測方法 早晨第一泡尿蛋白/肌酸酐比值（UPr:UCr）：\n\u003c2 歲：正常 \u003c0.5 mg/mg 2 歲：正常 \u003c0.2 mg/mg\n收集方式：睡前排空膀胱，起床後第一泡尿立刻收集。\nC. 病因（Box 19.1） 暫時性蛋白尿：發燒、運動、脫水、充血性心臟衰竭、癲癇、壓力、腎上腺素使用後\n腎絲球疾病：\n最小變化腎病症候群（MCD）、局部節段性腎絲球硬化（FSGS）、膜性腎病、膜增生性腎絲球腎炎 IgA 腎病、紫癜性腎炎（HSP）、狼瘡腎炎、Alport 症候群 腎小管疾病：Fanconi 症候群、Wilson 病、Lowe 症候群、Dent 病、藥物（氨基糖苷類、順鉑、NSAIDs、環孢靈）\nVI. 腎病症候群（Nephrotic Syndrome） A. 盛行率與病理 特發性腎病症候群為兒童最常見形式，約占 1–10 歲病例的 90%。最小變化疾病（MCD）為此年齡層最常見的腎病理學發現。\nB. 臨床表現 低白蛋白血症導致血漿滲透壓下降，引起全身性水腫。初期水腫常見於顏面（尤其是眼眶周圍）與小腿前側。\nC. 病因（Table 19.10） 原發性（90%） 繼發性（10%） MCD：占特發性兒童病因 85% 愛滋病毒、B 型肝炎、C 型肝炎 FSGS 系統性紅斑狼瘡 膜性腎病 糖尿病 IgA 腎病 藥物 裂隙膜遺傳疾病 惡性腫瘤（白血病、淋巴瘤） D. 類固醇反應分類 類型 定義 類固醇敏感型 開始prednisone治療後 4–8 週內緩解；MCD 約 95%，FSGS 約 20% 頻繁復發型 6 個月內復發 ≥2 次，或 12 個月內復發 ≥4 次 類固醇依賴型 類固醇減量或停藥後 14 天內連續復發 2 次 類固醇抵抗型 8 週類固醇治療後仍未緩解 E. 治療 類固醇敏感性：\nPrednisone 60 mg/m²/天 或 2 mg/kg/天（最大 60 mg/天）× 6 週 續以 40 mg/m² 或 1.5 mg/kg 隔日 × 6 週 復發：Prednisone 60 mg/m²/天 或 2 mg/kg/天 直至尿蛋白連續 3 天陰性，續以隔日 40 mg/m² × 4 週 二線藥物（頻繁復發/類固醇依賴）：Cyclophosphamide、Mycophenolate mofetil（MMF）、Calcineurin 抑制劑、Levamisole、Rituximab\nF. 非 MCD 警訊徵象 年齡 \u003c1 歲或 \u003e10 歲 腎病家族史 腎外疾病（關節炎、皮疹） 全身性或症候群性疾病 高血壓、肺水腫（血管內容量擴張） 腎衰竭 活動性尿沉渣（紅血球圓柱） G. 併發症 急性腎損傷、血栓栓塞疾病、危及生命的感染。慢性類固醇副作用：庫欣樣皮膚變化、白內障、加速動脈硬化、骨質疏鬆、胃潰瘂、情緒波動、失眠、胰島素阻抗。\nVII. 血尿（Hematuria） A. 定義 類型 定義 顯微血尿 離心尿 \u003e 5 RBCs/hpf；肉眼不可見 巨觀（肉眼）血尿 尿液可見血液 急性腎炎症候群 茶色或可樂色尿液、顏面/全身水腫、高血壓、寡尿 B. 病因（Table 19.11） 來源 病因 上泌尿路疾病 IgA 腎病、Alport 症候群、薄腎絲球基底膜病、鏈球菌感染後腎絲球腎炎（PSGN）、膜性腎病、MPGN、RPGN 多系統疾病 狼瘡腎炎、過敏性紫癜腎炎、ANCA相關血管炎、結節性多發性动脉炎、Goodpasture 症候群、溶血性尿毒症候群 腎小管間質疾病 腎盂腎炎、間質性腎炎、乳頭壞死、ATN 血管疾病 動靜脈血栓、鐮刀型紅血球疾病、 crystalluria（結晶尿） 先天性構造異常 水腎、多囊腎、威爾姆氏腫瘤、創傷 下泌尿路疾病 膀胱炎、尿道炎、尿路結石、創傷 C. 評估：腎絲球 vs. 腎絲球外血尿 特點 腎絲球性 腎絲球外 血壓 通常高血壓 通常正常 解尿困難 通常無 常有 水腫 可能 可能無 尿沉渣 變形 RBC、RBC 圓柱、蛋白 \u003e1+ 正常型態 RBC，無圓柱 腎絲球性血尿實驗室檢查：CBC、電解質（含鈣）、BUN/Cr、白蛋白、ANA、C3/C4、B 型肝炎、C 型肝炎、愛滋病毒、聽力篩檢（如懷疑 Alport）\n腎絲球外血尿：尿培養、淋病/披衣菌、子宮頸抹片（如有性行為）、考慮腹部/骨盆影像\nVIII. 急性腎損傷（Acute Kidney Injury, AKI） A. 定義 腎功能急劇下降，臨床表現為肌酸酐上升，伴或不伴尿量變化。\nB. 病因（Table 19.12） 分類 病因 腎前性（最常見） 出血、體液不足、敗血症、燒傷、充血性心臟衰竭、NSAIDs、ACE 抑制劑 腎性 急性腎小管壞死（ATN）（缺氧/缺血、藥物：氨基糖苷類、兩性黴素 B、化療藥物）、間質性腎炎（β-內醯胺、NSAIDs、磺胺類、PPI）、腎絲球腎炎（RPGN）、溶血性尿毒症候群、尿酸腎病（腫瘤溶解症候群） 腎後性 雙側輸尿管阻塞、尿道阻塞、膀胱功能障礙 C. 臨床表現 蒼白、尿量減少、全身及肺水腫、高血壓、嘔吐、嗜睡。早期腎衰竭的特徵常為寡尿。\nBUN/Cr 比值（兩者均以 mg/dL 為單位）：\n10–20（正常比）：腎性 AKI \u003e20：體液不足、腎前性氮質血症、胃腸道出血 \u003c5：肝病、飢餓、先天代謝異常 D. 急性腎小管壞死（ATN）三期 期別 特點 寡尿期 嚴重寡尿持續數天；若寡尿/無尿 \u003e3–6 週，恢復可能性低 高尿量期 尿量增加，通過大量等張尿，含鈉 80–150 mEq/L 恢復期 症狀通常快速緩解，但多尿可能持續數天至數週 E. 治療原則 嚴格監測體液狀態（每日體重、精確輸入輸出） 考慮放置導尿管監測尿量 敗血症相關：早期目標導向治療 AKI 處置見 Chapter 16（重症醫學） IX. 腎小管酸中毒（Renal Tubular Acidosis, RTA） 類型 缺陷位置 特色 第一型（遠端） 遠端腎小管氫離子分泌 尿 pH \u003e5.5（鹼血症時）、低血鉀、骨質軟化、生長遲緩 第二型（近端） 近端碳酸氫鹽回收減少 血碳酸氫鹽通常 12–20 mEq/L；可能合併 Fanconi 症候群 第四型 醛固酮減少或腎小管對醛固酮抵抗 高血鉀為特色 X. 慢性腎病（Chronic Kidney Disease, CKD）與腎衰竭 A. 分期（以 GFR 為準） 分期 GFR（mL/min/1.73 m²） 描述 G1 ≥90（伴有腎損傷） 腎損傷但功能正常 G2 60–89 輕度下降 G3a 45–59 輕至中度下降 G3b 30–44 中至重度下降 G4 15–29 重度下降 G5 \u003c15 或透析 腎衰竭 B. 併發症 高血壓、液體過剩、尿毒症、貧血（EPO 缺乏）、骨質病變（CKD-MBD）、高血鉀、酸中毒、生長遲緩\nC. 透析與腎移植 透析適應症：尿毒症症狀、體液過剩無法用藥物控制、嚴重高血鉀、難治性酸中毒、進行性尿毒症 腎移植為末期腎病之最佳治療選項 XI. 腎臟緊急情況 A. 惡性高血壓 定義：嚴重血壓升高伴急性器官損傷（視網膜、出血、滲出、乳頭水腫）。需靜脈抗高血壓藥物治療。\nB. 血栓性微血管病（TTP/HUS） 溶血性尿毒症候群（HUS）：微血管病性溶血性貧血、血小板減少、急性腎損傷。三聯徵。典型與 大腸桿菌 O157:H7 感染相關。\nC. 急進型腎絲球腎炎（RPGN） 快速進展為腎衰竭（數天至數週）。症狀：腎炎症候群（血尿、蛋白尿、水腫、高血壓）+ 快速功能衰退。常見原因：抗 GBM 病、ANCA 相關血管炎、狼瘡腎炎、IgA 腎病。\nXII. 參考資源與計算工具 NKDEP GFR 計算機：https://www.nkdep.nih.gov NKF 網站：https://www.kidney.org 2021 CKD-EPI 公式（移除種族因子） CKiD 公式適用於 1–16 歲（酵素法肌酸酐） ",
-  "wordCount" : "984",
-  "inLanguage": "en",
-  "datePublished": "0001-01-01T00:00:00Z",
-  "dateModified": "0001-01-01T00:00:00Z",
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://b101108063-ops.github.io/Harriet_lane/ch19-nephrology/"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Harriet Lane Handbook",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://b101108063-ops.github.io/Harriet_lane/favicon.ico"
-    }
-  }
-}
-</script>
-</head>
-<body id="top">
-    <header class="header">
-    <nav class="header-nav">
-        <div class="logo">
-            <a href="https://b101108063-ops.github.io/Harriet_lane/" accesskey="h" title="Harriet Lane Handbook (Alt + H)">Harriet Lane Handbook</a>
-            <div class="logo-switches">
-                <button id="theme-toggle" class="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
-                    <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-                    </svg>
-                    <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <circle cx="12" cy="12" r="5"></circle>
-                        <line x1="12" y1="1" x2="12" y2="3"></line>
-                        <line x1="12" y1="21" x2="12" y2="23"></line>
-                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-                        <line x1="1" y1="12" x2="3" y2="12"></line>
-                        <line x1="21" y1="12" x2="23" y2="12"></line>
-                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-                    </svg>
-                </button>
-            </div>
-        </div>
-        <ul id="menu" class="menu">
-            <li>
-                <a href="https://b101108063-ops.github.io/Harriet_lane/" title="Home">
-                    <span>Home</span>
-                </a>
-            </li>
-            <li>
-                <a href="https://b101108063-ops.github.io/Harriet_lane/search/" title="Search (Alt &#43; /)" accesskey=/>
-                    <span>Search</span>
-                </a>
-            </li>
-        </ul>
-    </nav>
-</header>
-<main class="main">
-
-<article class="post-single">
-  <header class="post-header">
-    
-    <h1 class="post-title entry-hint-parent">
-      Chapter 19: Nephrology
-    </h1>
-    <div class="post-meta">
-
-
-
-</div>
-  </header> 
-  <div class="post-content md-content"><blockquote>
+<div class="main-content">
+<blockquote>
 <p><strong>章節導讀摘要</strong>
 本章涵蓋小兒腎臟科的核心議題，包括尿液分析判讀、腎絲球濾過率（GFR）評估與估算公式、高血壓的診斷與治療、泌尿道感染的處理、蛋白尿與血尿的鑑別診斷、急性腎損傷的分類與治療，以及腎病症候群的診療原則。內容強調數值標準、疾病分類與臨床決策 cutoffs，適用於門診與住院照護情境。</p>
 </blockquote>
 <hr>
-<h2 id="i-尿液分析urinalysis">I. 尿液分析（Urinalysis）<a hidden class="anchor" aria-hidden="true" href="#i-尿液分析urinalysis">#</a></h2>
-<h3 id="a-適應症">A. 適應症<a hidden class="anchor" aria-hidden="true" href="#a-適應症">#</a></h3>
+<h2 id="i-尿液分析urinalysis">I. 尿液分析（Urinalysis）</h2>
+<h3 id="a-適應症">A. 適應症</h3>
 <p><span style="color:#f87171">泌尿道感染（UTI）</span>、<span style="color:#f87171">腎炎</span>、創傷、<span style="color:#f87171">糖尿病</span>、<span style="color:#f87171">橫紋肌溶解症</span>、水腫、生長遲緩。</p>
-<h3 id="b-採檢注意事項">B. 採檢注意事項<a hidden class="anchor" aria-hidden="true" href="#b-採檢注意事項">#</a></h3>
+<h3 id="b-採檢注意事項">B. 採檢注意事項</h3>
 <p>尿液應於排尿後 <strong>1 小時內</strong> 送驗，否則需冷藏於 <span style="color:#34d399">4°C</span>。美國兒科醫學會（AAP）不建議常規年度篩檢，除非為慢性腎病高風險族群。</p>
-<h3 id="c-尿液分析項目">C. 尿液分析項目<a hidden class="anchor" aria-hidden="true" href="#c-尿液分析項目">#</a></h3>
+<h3 id="c-尿液分析項目">C. 尿液分析項目</h3>
 <table>
   <thead>
       <tr>
@@ -341,11 +88,11 @@ C. 尿液分析項目 項目 正常值 異常意義 外觀 無色至琥珀色 �
   </tbody>
 </table>
 <hr>
-<h2 id="ii-腎功能測試">II. 腎功能測試<a hidden class="anchor" aria-hidden="true" href="#ii-腎功能測試">#</a></h2>
-<h3 id="a-腎絲球功能測試">A. 腎絲球功能測試<a hidden class="anchor" aria-hidden="true" href="#a-腎絲球功能測試">#</a></h3>
-<h4 id="1-腎絲球發育">1. 腎絲球發育<a hidden class="anchor" aria-hidden="true" href="#1-腎絲球發育">#</a></h4>
+<h2 id="ii-腎功能測試">II. 腎功能測試</h2>
+<h3 id="a-腎絲球功能測試">A. 腎絲球功能測試</h3>
+<h4 id="1-腎絲球發育">1. 腎絲球發育</h4>
 <p><span style="color:#60a5fa">腎絲球發育</span>於妊娠 <span style="color:#34d399">36 週</span>完成。GFR 在出生後前 2 年隨腎絲球成熟而增加。</p>
-<h4 id="2-正常-gfr-值以菊粉清除率為黃金標準">2. 正常 GFR 值（以菊粉清除率為黃金標準）<a hidden class="anchor" aria-hidden="true" href="#2-正常-gfr-值以菊粉清除率為黃金標準">#</a></h4>
+<h4 id="2-正常-gfr-值以菊粉清除率為黃金標準">2. 正常 GFR 值（以菊粉清除率為黃金標準）</h4>
 <table>
   <thead>
       <tr>
@@ -380,7 +127,7 @@ C. 尿液分析項目 項目 正常值 異常意義 外觀 無色至琥珀色 �
       </tr>
   </tbody>
 </table>
-<h4 id="3-肌酸酐清除率ccr">3. 肌酸酐清除率（CCr）<a hidden class="anchor" aria-hidden="true" href="#3-肌酸酐清除率ccr">#</a></h4>
+<h4 id="3-肌酸酐清除率ccr">3. 肌酸酐清除率（CCr）</h4>
 <p>$$CCr = [U \times (V/P)] \times (1.73/BSA)$$</p>
 <ul>
 <li>U = 尿肌酸酐（mg/dL）</li>
@@ -391,7 +138,7 @@ C. 尿液分析項目 項目 正常值 異常意義 外觀 無色至琥珀色 �
 <blockquote>
 <p>當 GFR 偏低時，CCr 會高估真實 GFR。</p>
 </blockquote>
-<h4 id="4-估算-gfregfr公式">4. 估算 GFR（eGFR）公式<a hidden class="anchor" aria-hidden="true" href="#4-估算-gfregfr公式">#</a></h4>
+<h4 id="4-估算-gfregfr公式">4. 估算 GFR（eGFR）公式</h4>
 <p><strong>a. CKiD 公式（1–16 歲，適用酵素法）</strong>
 $$eGFR = 0.413 \times (L / Pcr)$$</p>
 <ul>
@@ -430,11 +177,11 @@ $$eGFR = k \times (L / Pcr)$$</p>
 <p>使用<span style="color:#fb923c">酵素法肌酸酐</span>搭配 Schwartz 公式會高估 GFR。</p>
 </blockquote>
 <p><strong>c. MDRD / CKD-EPI</strong>：用於 &gt;18 歲，2021 年更新移除種族因子。</p>
-<h4 id="5-其他-gfr-測定">5. 其他 GFR 測定<a hidden class="anchor" aria-hidden="true" href="#5-其他-gfr-測定">#</a></h4>
+<h4 id="5-其他-gfr-測定">5. 其他 GFR 測定</h4>
 <p><span style="color:#60a5fa">碘西酮</span>、<span style="color:#60a5fa">DTPA</span>、<span style="color:#60a5fa">Iohexol</span>可用於化療劑量精確調整。<span style="color:#60a5fa">胱抑素 C（Cystatin C）</span>較肌酸酐更準確，適用於肌肉質量異常病患。</p>
 <hr>
-<h3 id="b-腎小管功能測試">B. 腎小管功能測試<a hidden class="anchor" aria-hidden="true" href="#b-腎小管功能測試">#</a></h3>
-<h4 id="1-近端腎小管溶質處理">1. 近端腎小管：溶質處理<a hidden class="anchor" aria-hidden="true" href="#1-近端腎小管溶質處理">#</a></h4>
+<h3 id="b-腎小管功能測試">B. 腎小管功能測試</h3>
+<h4 id="1-近端腎小管溶質處理">1. 近端腎小管：溶質處理</h4>
 <p><strong>a. 腎小管回收率（Tx）</strong>
 $$Tx = [1 - (Ux/Px) / (UCr/PCr)] \times 100$$</p>
 <p>常用於計算<span style="color:#60a5fa">磷酸鹽回收率（TRP）</span>。低磷酸血症且近端腎小管功能正常時，TRP 應接近 <strong>100%</strong>。</p>
@@ -477,7 +224,7 @@ $$FeHCO3 = [(UHCO3/PHCO3) / (UCr/PCr)] \times 100$$</p>
 <li><span style="color:#f87171">遠端 RTA</span>：通常 &lt;5%</li>
 <li><span style="color:#f87171">近端 RTA（第二型）</span>：&gt;15%</li>
 </ul>
-<h4 id="2-遠端腎小管酸鹼平衡">2. 遠端腎小管：酸鹼平衡<a hidden class="anchor" aria-hidden="true" href="#2-遠端腎小管酸鹼平衡">#</a></h4>
+<h4 id="2-遠端腎小管酸鹼平衡">2. 遠端腎小管：酸鹼平衡</h4>
 <p><strong>a. 尿陰離子間隙（UAG）</strong>
 $$UAG = UNa + UK - UCl$$</p>
 <ul>
@@ -506,20 +253,20 @@ $$UAG = UNa + UK - UCl$$</p>
   </tbody>
 </table>
 <hr>
-<h2 id="iii-血壓與慢性高血壓">III. 血壓與慢性高血壓<a hidden class="anchor" aria-hidden="true" href="#iii-血壓與慢性高血壓">#</a></h2>
-<h3 id="a-定義">A. 定義<a hidden class="anchor" aria-hidden="true" href="#a-定義">#</a></h3>
+<h2 id="iii-血壓與慢性高血壓">III. 血壓與慢性高血壓</h2>
+<h3 id="a-定義">A. 定義</h3>
 <ul>
 <li>&lt;13 歲：收縮壓或舒張壓 <strong>≥95 百分位</strong> 為高血壓</li>
 <li>≥13 歲：<strong>≥130/80 mmHg</strong> 為高血壓</li>
 <li>血壓 &gt;90 百分位或 ≥120/80 應於門診重新測量</li>
 </ul>
-<h3 id="b-測量規範">B. 測量規範<a hidden class="anchor" aria-hidden="true" href="#b-測量規範">#</a></h3>
+<h3 id="b-測量規範">B. 測量規範</h3>
 <ol>
 <li><strong>≥3 歲</strong>：每年測量一次；有高風險者（肥胖、服用升高血壓藥物、腎病、<span style="color:#f87171">主動脈窄縮</span>、糖尿病）每次就診測量。</li>
 <li><strong>&lt;3 歲</strong> 有風險因子者（早產 &lt;32 週、小於胎齡、先天性心臟病、腎病家族史、復發性 UTI、惡性腫瘤、移植、使用升高血壓藥物、顱內壓升高）應測量。</li>
 <li>測量姿勢：坐姿、上臂置於心臟水平，休息 <strong>5 分鐘</strong>後測量；氣囊寬度至少為上臂圍的 <strong>40%</strong>。</li>
 </ol>
-<h3 id="c-各年齡層高血壓病因table-197">C. 各年齡層高血壓病因（Table 19.7）<a hidden class="anchor" aria-hidden="true" href="#c-各年齡層高血壓病因table-197">#</a></h3>
+<h3 id="c-各年齡層高血壓病因table-197">C. 各年齡層高血壓病因（Table 19.7）</h3>
 <table>
   <thead>
       <tr>
@@ -543,12 +290,12 @@ $$UAG = UNa + UK - UCl$$</p>
   </tbody>
 </table>
 <p><strong>引起高血壓的藥物</strong>：<span style="color:#fb923c">皮質類固醇</span>、<span style="color:#fb923c">Calcineurin 抑制劑</span>（<span style="color:#fb923c">環孢靈</span>、<span style="color:#fb923c">他克莫司</span>）、<span style="color:#fb923c"> Methylphenidate</span>、<span style="color:#fb923c">NSAIDs</span>、<span style="color:#fb923c"> Erythropoietin</span>、古柯鹼、安非他命。</p>
-<h3 id="d-慢性高血壓評估">D. 慢性高血壓評估<a hidden class="anchor" aria-hidden="true" href="#d-慢性高血壓評估">#</a></h3>
+<h3 id="d-慢性高血壓評估">D. 慢性高血壓評估</h3>
 <p><strong>實驗室檢查（所有病患）</strong>：UA、電解質、肌酸酐、BUN、血脂
 <strong>肥胖病患</strong>：HbA1c、AST/ALT
 <strong>影像</strong>：腎臟超聲（&lt;6 歲或 UA/腎功能異常）、心臟超聲評估左心室肥大
 <strong>確診建議</strong>：24 小時<span style="color:#60a5fa"> ABPM</span>（動態血壓監測）為確認高血壓的標準</p>
-<h3 id="e-高血壓分類與治療table-198">E. 高血壓分類與治療（Table 19.8）<a hidden class="anchor" aria-hidden="true" href="#e-高血壓分類與治療table-198">#</a></h3>
+<h3 id="e-高血壓分類與治療table-198">E. 高血壓分類與治療（Table 19.8）</h3>
 <table>
   <thead>
       <tr>
@@ -598,14 +345,14 @@ $$UAG = UNa + UK - UCl$$</p>
 <p><span style="color:#fb923c">ACE 抑制劑</span>和<span style="color:#fb923c">ARB</span>禁用於<span style="color:#f87171">懷孕</span>或<span style="color:#f87171">雙側腎动脉狹窄</span>。</p>
 </blockquote>
 <hr>
-<h2 id="iv-泌尿道感染urinary-tract-infections">IV. 泌尿道感染（Urinary Tract Infections）<a hidden class="anchor" aria-hidden="true" href="#iv-泌尿道感染urinary-tract-infections">#</a></h2>
-<h3 id="a-風險因子">A. 風險因子<a hidden class="anchor" aria-hidden="true" href="#a-風險因子">#</a></h3>
+<h2 id="iv-泌尿道感染urinary-tract-infections">IV. 泌尿道感染（Urinary Tract Infections）</h2>
+<h3 id="a-風險因子">A. 風險因子</h3>
 <ul>
 <li>女性風險高於男性</li>
 <li>未割包皮的男性風險較高</li>
 <li>發燒 ≥<span style="color:#34d399">39°C</span> 且持續 &gt;1–2 天</li>
 </ul>
-<h3 id="b-尿液收集方式">B. 尿液收集方式<a hidden class="anchor" aria-hidden="true" href="#b-尿液收集方式">#</a></h3>
+<h3 id="b-尿液收集方式">B. 尿液收集方式</h3>
 <table>
   <thead>
       <tr>
@@ -628,7 +375,7 @@ $$UAG = UNa + UK - UCl$$</p>
       </tr>
   </tbody>
 </table>
-<h3 id="c-診斷標準">C. 診斷標準<a hidden class="anchor" aria-hidden="true" href="#c-診斷標準">#</a></h3>
+<h3 id="c-診斷標準">C. 診斷標準</h3>
 <table>
   <thead>
       <tr>
@@ -651,30 +398,30 @@ $$UAG = UNa + UK - UCl$$</p>
       </tr>
   </tbody>
 </table>
-<h3 id="d-常見致病菌">D. 常見致病菌<a hidden class="anchor" aria-hidden="true" href="#d-常見致病菌">#</a></h3>
+<h3 id="d-常見致病菌">D. 常見致病菌</h3>
 <ul>
 <li><span style="color:#c084fc">大腸桿菌（E. coli）</span>為最常見</li>
 <li><span style="color:#c084fc">克雷伯氏菌</span>、<span style="color:#c084fc">變形菌</span>、<span style="color:#c084fc">腐生葡萄球菌（S. saprophyticus）</span></li>
 <li>新生兒：<span style="color:#c084fc">B 群鏈球菌</span></li>
 <li>異常宿主：<span style="color:#c084fc">腸球菌</span>、<span style="color:#c084fc">綠膿桿菌</span></li>
 </ul>
-<h3 id="e-腎盂腎炎-vs-膀胱炎">E. 腎盂腎炎 vs. 膀胱炎<a hidden class="anchor" aria-hidden="true" href="#e-腎盂腎炎-vs-膀胱炎">#</a></h3>
+<h3 id="e-腎盂腎炎-vs-膀胱炎">E. 腎盂腎炎 vs. 膀胱炎</h3>
 <p><span style="color:#f87171">腎盂腎炎</span>（上泌尿路感染）特點：</p>
 <ul>
 <li>發燒 ≥<span style="color:#34d399">38.5°C</span>（尤其抗生素治療 48 小時後仍持續）</li>
 <li>全身症狀、肋椎角壓痛</li>
 <li>CRP 升高、白血球增多</li>
 </ul>
-<h3 id="f-影像適應症">F. 影像適應症<a hidden class="anchor" aria-hidden="true" href="#f-影像適應症">#</a></h3>
+<h3 id="f-影像適應症">F. 影像適應症</h3>
 <p><strong>腎膀胱超聲（RBUS）</strong>：2–24 個月有第一線發燒性 UTI、復發性或非典型 UTI、治療 48 小時內無改善
 <strong>排尿膀胱尿道攝影（VCUG）</strong>：RBUS 異常（<span style="color:#f87171">水腎</span>、疤痕）或復雜性/復發性腎盂腎炎；最佳時機為感染後 2–6 週</p>
-<h3 id="g-治療">G. 治療<a hidden class="anchor" aria-hidden="true" href="#g-治療">#</a></h3>
+<h3 id="g-治療">G. 治療</h3>
 <ul>
 <li><strong>療程</strong>：無併發症 3–5 天；<span style="color:#f87171">腎盂腎炎</span>或中毒病患 7–14 天</li>
 <li><strong>路徑</strong>：中毒、脫水或無法口服者給予靜脈抗生素</li>
 <li><strong>治療失敗</strong>：需考慮<span style="color:#f87171">腎膿瘍</span>或<span style="color:#f87171">泌尿路阻塞</span></li>
 </ul>
-<h3 id="h-膀胱輸尿管逆流vur分級">H. 膀胱輸尿管逆流（VUR）分級<a hidden class="anchor" aria-hidden="true" href="#h-膀胱輸尿管逆流vur分級">#</a></h3>
+<h3 id="h-膀胱輸尿管逆流vur分級">H. 膀胱輸尿管逆流（VUR）分級</h3>
 <table>
   <thead>
       <tr>
@@ -710,11 +457,11 @@ $$UAG = UNa + UK - UCl$$</p>
 <li><span style="color:#fb923c">Trimethoprim-sulfamethoxazole</span> 預防性抗生素可降低 UTI 復發風險約 50%，但對腎疤痕無顯著差異</li>
 <li>高分級 VUR 持續者可能需手術治療</li>
 </ul>
-<h3 id="i-無症狀菌尿">I. 無症狀菌尿<a hidden class="anchor" aria-hidden="true" href="#i-無症狀菌尿">#</a></h3>
+<h3 id="i-無症狀菌尿">I. 無症狀菌尿</h3>
 <p>定義：顯微鏡下可見細菌但無發燒、無症狀、無膿尿。若排尿習慣和泌尿系統正常，不需抗生素治療。</p>
 <hr>
-<h2 id="v-蛋白尿proteinuria">V. 蛋白尿（Proteinuria）<a hidden class="anchor" aria-hidden="true" href="#v-蛋白尿proteinuria">#</a></h2>
-<h3 id="a-定義-1">A. 定義<a hidden class="anchor" aria-hidden="true" href="#a-定義-1">#</a></h3>
+<h2 id="v-蛋白尿proteinuria">V. 蛋白尿（Proteinuria）</h2>
+<h3 id="a-定義-1">A. 定義</h3>
 <table>
   <thead>
       <tr>
@@ -749,7 +496,7 @@ $$UAG = UNa + UK - UCl$$</p>
       </tr>
   </tbody>
 </table>
-<h3 id="b-偵測方法">B. 偵測方法<a hidden class="anchor" aria-hidden="true" href="#b-偵測方法">#</a></h3>
+<h3 id="b-偵測方法">B. 偵測方法</h3>
 <p><strong>早晨第一泡尿蛋白/肌酸酐比值（UPr:UCr）</strong>：</p>
 <ul>
 <li>&lt;2 歲：正常 <span style="color:#34d399">&lt;0.5 mg/mg</span></li>
@@ -762,7 +509,7 @@ $$UAG = UNa + UK - UCl$$</p>
 <blockquote>
 <p>收集方式：睡前排空膀胱，起床後第一泡尿立刻收集。</p>
 </blockquote>
-<h3 id="c-病因box-191">C. 病因（Box 19.1）<a hidden class="anchor" aria-hidden="true" href="#c-病因box-191">#</a></h3>
+<h3 id="c-病因box-191">C. 病因（Box 19.1）</h3>
 <p><strong>暫時性蛋白尿</strong>：發燒、運動、脫水、<span style="color:#f87171">充血性心臟衰竭</span>、癲癇、壓力、腎上腺素使用後</p>
 <p><strong>腎絲球疾病</strong>：</p>
 <ul>
@@ -771,12 +518,12 @@ $$UAG = UNa + UK - UCl$$</p>
 </ul>
 <p><strong>腎小管疾病</strong>：<span style="color:#f87171">Fanconi 症候群</span>、<span style="color:#f87171">Wilson 病</span>、<span style="color:#f87171">Lowe 症候群</span>、<span style="color:#f87171">Dent 病</span>、藥物（<span style="color:#fb923c">氨基糖苷類</span>、<span style="color:#fb923c">順鉑</span>、<span style="color:#fb923c">NSAIDs</span>、<span style="color:#fb923c">環孢靈</span>）</p>
 <hr>
-<h2 id="vi-腎病症候群nephrotic-syndrome">VI. 腎病症候群（Nephrotic Syndrome）<a hidden class="anchor" aria-hidden="true" href="#vi-腎病症候群nephrotic-syndrome">#</a></h2>
-<h3 id="a-盛行率與病理">A. 盛行率與病理<a hidden class="anchor" aria-hidden="true" href="#a-盛行率與病理">#</a></h3>
+<h2 id="vi-腎病症候群nephrotic-syndrome">VI. 腎病症候群（Nephrotic Syndrome）</h2>
+<h3 id="a-盛行率與病理">A. 盛行率與病理</h3>
 <p><span style="color:#f87171">特發性腎病症候群</span>為兒童最常見形式，約占 1–10 歲病例的 <strong>90%</strong>。<span style="color:#f87171">最小變化疾病（MCD）</span>為此年齡層最常見的腎病理學發現。</p>
-<h3 id="b-臨床表現">B. 臨床表現<a hidden class="anchor" aria-hidden="true" href="#b-臨床表現">#</a></h3>
+<h3 id="b-臨床表現">B. 臨床表現</h3>
 <p>低白蛋白血症導致血漿滲透壓下降，引起全身性水腫。初期水腫常見於顏面（尤其是眼眶周圍）與小腿前側。</p>
-<h3 id="c-病因table-1910">C. 病因（Table 19.10）<a hidden class="anchor" aria-hidden="true" href="#c-病因table-1910">#</a></h3>
+<h3 id="c-病因table-1910">C. 病因（Table 19.10）</h3>
 <table>
   <thead>
       <tr>
@@ -807,7 +554,7 @@ $$UAG = UNa + UK - UCl$$</p>
       </tr>
   </tbody>
 </table>
-<h3 id="d-類固醇反應分類">D. 類固醇反應分類<a hidden class="anchor" aria-hidden="true" href="#d-類固醇反應分類">#</a></h3>
+<h3 id="d-類固醇反應分類">D. 類固醇反應分類</h3>
 <table>
   <thead>
       <tr>
@@ -834,7 +581,7 @@ $$UAG = UNa + UK - UCl$$</p>
       </tr>
   </tbody>
 </table>
-<h3 id="e-治療">E. 治療<a hidden class="anchor" aria-hidden="true" href="#e-治療">#</a></h3>
+<h3 id="e-治療">E. 治療</h3>
 <p><strong>類固醇敏感性</strong>：</p>
 <ul>
 <li>Prednisone <span style="color:#34d399">60 mg/m²/天</span> 或 <span style="color:#34d399">2 mg/kg/天</span>（最大 60 mg/天）× 6 週</li>
@@ -842,7 +589,7 @@ $$UAG = UNa + UK - UCl$$</p>
 <li>復發：<span style="color:#fb923c">Prednisone</span> <span style="color:#34d399">60 mg/m²/天</span> 或 <span style="color:#34d399">2 mg/kg/天</span> 直至尿蛋白連續 3 天陰性，續以隔日 <span style="color:#34d399">40 mg/m²</span> × 4 週</li>
 </ul>
 <p><strong>二線藥物</strong>（頻繁復發/類固醇依賴）：<span style="color:#fb923c">Cyclophosphamide</span>、<span style="color:#fb923c">Mycophenolate mofetil（MMF）</span>、<span style="color:#fb923c">Calcineurin 抑制劑</span>、<span style="color:#fb923c">Levamisole</span>、<span style="color:#fb923c">Rituximab</span></p>
-<h3 id="f-非-mcd-警訊徵象">F. 非 MCD 警訊徵象<a hidden class="anchor" aria-hidden="true" href="#f-非-mcd-警訊徵象">#</a></h3>
+<h3 id="f-非-mcd-警訊徵象">F. 非 MCD 警訊徵象</h3>
 <ul>
 <li>年齡 &lt;1 歲或 &gt;10 歲</li>
 <li>腎病家族史</li>
@@ -852,11 +599,11 @@ $$UAG = UNa + UK - UCl$$</p>
 <li>腎衰竭</li>
 <li>活動性尿沉渣（紅血球圓柱）</li>
 </ul>
-<h3 id="g-併發症">G. 併發症<a hidden class="anchor" aria-hidden="true" href="#g-併發症">#</a></h3>
+<h3 id="g-併發症">G. 併發症</h3>
 <p><span style="color:#f87171">急性腎損傷</span>、血栓栓塞疾病、危及生命的感染。慢性類固醇副作用：庫欣樣皮膚變化、白內障、加速動脈硬化、骨質疏鬆、胃潰瘂、情緒波動、失眠、胰島素阻抗。</p>
 <hr>
-<h2 id="vii-血尿hematuria">VII. 血尿（Hematuria）<a hidden class="anchor" aria-hidden="true" href="#vii-血尿hematuria">#</a></h2>
-<h3 id="a-定義-2">A. 定義<a hidden class="anchor" aria-hidden="true" href="#a-定義-2">#</a></h3>
+<h2 id="vii-血尿hematuria">VII. 血尿（Hematuria）</h2>
+<h3 id="a-定義-2">A. 定義</h3>
 <table>
   <thead>
       <tr>
@@ -879,7 +626,7 @@ $$UAG = UNa + UK - UCl$$</p>
       </tr>
   </tbody>
 </table>
-<h3 id="b-病因table-1911">B. 病因（Table 19.11）<a hidden class="anchor" aria-hidden="true" href="#b-病因table-1911">#</a></h3>
+<h3 id="b-病因table-1911">B. 病因（Table 19.11）</h3>
 <table>
   <thead>
       <tr>
@@ -914,7 +661,7 @@ $$UAG = UNa + UK - UCl$$</p>
       </tr>
   </tbody>
 </table>
-<h3 id="c-評估腎絲球-vs-腎絲球外血尿">C. 評估：腎絲球 vs. 腎絲球外血尿<a hidden class="anchor" aria-hidden="true" href="#c-評估腎絲球-vs-腎絲球外血尿">#</a></h3>
+<h3 id="c-評估腎絲球-vs-腎絲球外血尿">C. 評估：腎絲球 vs. 腎絲球外血尿</h3>
 <table>
   <thead>
       <tr>
@@ -949,10 +696,10 @@ $$UAG = UNa + UK - UCl$$</p>
 <p><strong>腎絲球性血尿實驗室檢查</strong>：CBC、電解質（含鈣）、BUN/Cr、白蛋白、ANA、C3/C4、B 型肝炎、C 型肝炎、愛滋病毒、聽力篩檢（如懷疑 Alport）</p>
 <p><strong>腎絲球外血尿</strong>：尿培養、淋病/披衣菌、子宮頸抹片（如有性行為）、考慮腹部/骨盆影像</p>
 <hr>
-<h2 id="viii-急性腎損傷acute-kidney-injury-aki">VIII. 急性腎損傷（Acute Kidney Injury, AKI）<a hidden class="anchor" aria-hidden="true" href="#viii-急性腎損傷acute-kidney-injury-aki">#</a></h2>
-<h3 id="a-定義-3">A. 定義<a hidden class="anchor" aria-hidden="true" href="#a-定義-3">#</a></h3>
+<h2 id="viii-急性腎損傷acute-kidney-injury-aki">VIII. 急性腎損傷（Acute Kidney Injury, AKI）</h2>
+<h3 id="a-定義-3">A. 定義</h3>
 <p>腎功能急劇下降，臨床表現為肌酸酐上升，伴或不伴尿量變化。</p>
-<h3 id="b-病因table-1912">B. 病因（Table 19.12）<a hidden class="anchor" aria-hidden="true" href="#b-病因table-1912">#</a></h3>
+<h3 id="b-病因table-1912">B. 病因（Table 19.12）</h3>
 <table>
   <thead>
       <tr>
@@ -975,7 +722,7 @@ $$UAG = UNa + UK - UCl$$</p>
       </tr>
   </tbody>
 </table>
-<h3 id="c-臨床表現">C. 臨床表現<a hidden class="anchor" aria-hidden="true" href="#c-臨床表現">#</a></h3>
+<h3 id="c-臨床表現">C. 臨床表現</h3>
 <p>蒼白、尿量減少、全身及肺水腫、高血壓、嘔吐、嗜睡。早期腎衰竭的特徵常為<span style="color:#60a5fa">寡尿</span>。</p>
 <p><strong>BUN/Cr 比值（兩者均以 mg/dL 為單位）</strong>：</p>
 <ul>
@@ -983,7 +730,7 @@ $$UAG = UNa + UK - UCl$$</p>
 <li><span style="color:#34d399">&gt;20</span>：體液不足、腎前性氮質血症、胃腸道出血</li>
 <li><span style="color:#34d399">&lt;5</span>：肝病、飢餓、先天代謝異常</li>
 </ul>
-<h3 id="d-急性腎小管壞死atn三期">D. 急性腎小管壞死（ATN）三期<a hidden class="anchor" aria-hidden="true" href="#d-急性腎小管壞死atn三期">#</a></h3>
+<h3 id="d-急性腎小管壞死atn三期">D. 急性腎小管壞死（ATN）三期</h3>
 <table>
   <thead>
       <tr>
@@ -1006,7 +753,7 @@ $$UAG = UNa + UK - UCl$$</p>
       </tr>
   </tbody>
 </table>
-<h3 id="e-治療原則">E. 治療原則<a hidden class="anchor" aria-hidden="true" href="#e-治療原則">#</a></h3>
+<h3 id="e-治療原則">E. 治療原則</h3>
 <ul>
 <li>嚴格監測體液狀態（每日體重、精確輸入輸出）</li>
 <li>考慮放置導尿管監測尿量</li>
@@ -1014,7 +761,7 @@ $$UAG = UNa + UK - UCl$$</p>
 <li>AKI 處置見 Chapter 16（重症醫學）</li>
 </ul>
 <hr>
-<h2 id="ix-腎小管酸中毒renal-tubular-acidosis-rta">IX. 腎小管酸中毒（Renal Tubular Acidosis, RTA）<a hidden class="anchor" aria-hidden="true" href="#ix-腎小管酸中毒renal-tubular-acidosis-rta">#</a></h2>
+<h2 id="ix-腎小管酸中毒renal-tubular-acidosis-rta">IX. 腎小管酸中毒（Renal Tubular Acidosis, RTA）</h2>
 <table>
   <thead>
       <tr>
@@ -1042,8 +789,8 @@ $$UAG = UNa + UK - UCl$$</p>
   </tbody>
 </table>
 <hr>
-<h2 id="x-慢性腎病chronic-kidney-disease-ckd與腎衰竭">X. 慢性腎病（Chronic Kidney Disease, CKD）與腎衰竭<a hidden class="anchor" aria-hidden="true" href="#x-慢性腎病chronic-kidney-disease-ckd與腎衰竭">#</a></h2>
-<h3 id="a-分期以-gfr-為準">A. 分期（以 GFR 為準）<a hidden class="anchor" aria-hidden="true" href="#a-分期以-gfr-為準">#</a></h3>
+<h2 id="x-慢性腎病chronic-kidney-disease-ckd與腎衰竭">X. 慢性腎病（Chronic Kidney Disease, CKD）與腎衰竭</h2>
+<h3 id="a-分期以-gfr-為準">A. 分期（以 GFR 為準）</h3>
 <table>
   <thead>
       <tr>
@@ -1085,23 +832,23 @@ $$UAG = UNa + UK - UCl$$</p>
       </tr>
   </tbody>
 </table>
-<h3 id="b-併發症">B. 併發症<a hidden class="anchor" aria-hidden="true" href="#b-併發症">#</a></h3>
+<h3 id="b-併發症">B. 併發症</h3>
 <p><span style="color:#f87171">高血壓</span>、<span style="color:#f87171">液體過剩</span>、<span style="color:#f87171">尿毒症</span>、<span style="color:#f87171">貧血</span>（EPO 缺乏）、<span style="color:#f87171">骨質病變（CKD-MBD）</span>、<span style="color:#f87171">高血鉀</span>、<span style="color:#f87171">酸中毒</span>、<span style="color:#f87171">生長遲緩</span></p>
-<h3 id="c-透析與腎移植">C. 透析與腎移植<a hidden class="anchor" aria-hidden="true" href="#c-透析與腎移植">#</a></h3>
+<h3 id="c-透析與腎移植">C. 透析與腎移植</h3>
 <ul>
 <li>透析適應症：尿毒症症狀、體液過剩無法用藥物控制、嚴重高血鉀、難治性酸中毒、進行性尿毒症</li>
 <li>腎移植為末期腎病之最佳治療選項</li>
 </ul>
 <hr>
-<h2 id="xi-腎臟緊急情況">XI. 腎臟緊急情況<a hidden class="anchor" aria-hidden="true" href="#xi-腎臟緊急情況">#</a></h2>
-<h3 id="a-惡性高血壓">A. 惡性高血壓<a hidden class="anchor" aria-hidden="true" href="#a-惡性高血壓">#</a></h3>
+<h2 id="xi-腎臟緊急情況">XI. 腎臟緊急情況</h2>
+<h3 id="a-惡性高血壓">A. 惡性高血壓</h3>
 <p>定義：嚴重血壓升高伴急性器官損傷（視網膜、出血、滲出、乳頭水腫）。需靜脈抗高血壓藥物治療。</p>
-<h3 id="b-血栓性微血管病ttphus">B. 血栓性微血管病（TTP/HUS）<a hidden class="anchor" aria-hidden="true" href="#b-血栓性微血管病ttphus">#</a></h3>
+<h3 id="b-血栓性微血管病ttphus">B. 血栓性微血管病（TTP/HUS）</h3>
 <p><span style="color:#f87171">溶血性尿毒症候群（HUS）</span>：微血管病性溶血性貧血、血小板減少、急性腎損傷。三聯徵。典型與 <span style="color:#c084fc">大腸桿菌 O157:H7</span> 感染相關。</p>
-<h3 id="c-急進型腎絲球腎炎rpgn">C. 急進型腎絲球腎炎（RPGN）<a hidden class="anchor" aria-hidden="true" href="#c-急進型腎絲球腎炎rpgn">#</a></h3>
+<h3 id="c-急進型腎絲球腎炎rpgn">C. 急進型腎絲球腎炎（RPGN）</h3>
 <p>快速進展為腎衰竭（數天至數週）。症狀：<span style="color:#60a5fa">腎炎症候群</span>（血尿、蛋白尿、水腫、高血壓）+ 快速功能衰退。常見原因：<span style="color:#f87171">抗 GBM 病</span>、<span style="color:#f87171">ANCA 相關血管炎</span>、<span style="color:#f87171">狼瘡腎炎</span>、<span style="color:#f87171">IgA 腎病</span>。</p>
 <hr>
-<h2 id="xii-參考資源與計算工具">XII. 參考資源與計算工具<a hidden class="anchor" aria-hidden="true" href="#xii-參考資源與計算工具">#</a></h2>
+<h2 id="xii-參考資源與計算工具">XII. 參考資源與計算工具</h2>
 <ul>
 <li><strong>NKDEP GFR 計算機</strong>：https://www.nkdep.nih.gov</li>
 <li><strong>NKF 網站</strong>：https://www.kidney.org</li>
@@ -1109,94 +856,4 @@ $$UAG = UNa + UK - UCl$$</p>
 <li>CKiD 公式適用於 1–16 歲（酵素法肌酸酐）</li>
 </ul>
 
-
-  </div>
-
-  <footer class="post-footer">
-    <ul class="post-tags">
-    </ul>
-  </footer>
-</article>
-    </main>
-    
-<footer class="footer">
-        <span>&copy; 2026 <a href="https://b101108063-ops.github.io/Harriet_lane/">Harriet Lane Handbook</a></span> · 
-
-    
-    
-    <span>
-        Powered by
-        <a href="https://gohugo.io/?utm_source=papermod" rel="noopener" target="_blank">Hugo</a> &
-        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
-    </span>
-</footer>
-<a href="#top" id="top-link" class="top-link hidden" aria-label="go to top" title="Go to Top (Alt + G)" accesskey="g">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-        stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-up">
-        <polyline points="17 11 12 6 7 11"></polyline>
-        <polyline points="17 18 12 13 7 18"></polyline>
-    </svg>
-</a>
-
-<script>
-    let menu = document.getElementById('menu');
-    if (menu) {
-        
-        const scrollPosition = localStorage.getItem("menu-scroll-position");
-        if (scrollPosition) {
-            menu.scrollLeft = parseInt(scrollPosition, 10);
-        }
-        
-        menu.onscroll = function () {
-            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
-        }
-    }
-
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener("click", function (e) {
-            e.preventDefault();
-            var id = this.getAttribute("href").substr(1);
-            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
-                    behavior: "smooth"
-                });
-            } else {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
-            }
-            if (id === "top") {
-                history.replaceState(null, null, " ");
-            } else {
-                history.pushState(null, null, `#${id}`);
-            }
-        });
-    });
-
-</script>
-<script>
-    var toplink = document.getElementById("top-link");
-    window.onscroll = function () {
-        const scrollThreshold = window.innerHeight;
-        if (document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold) {
-            toplink.classList.remove("hidden");
-        } else {
-            toplink.classList.add("hidden");
-        }
-    };
-
-</script>
-<script>
-    document.getElementById("theme-toggle").addEventListener("click", () => {
-        const html = document.querySelector("html");
-        if (html.dataset.theme === "dark") {
-            html.dataset.theme = 'light';
-            localStorage.setItem("pref-theme", 'light');
-        } else {
-            html.dataset.theme = 'dark';
-            localStorage.setItem("pref-theme", 'dark');
-        }
-    })
-
-</script>
-</body>
-
-</html>
+</div>
