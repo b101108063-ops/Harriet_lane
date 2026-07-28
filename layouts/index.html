@@ -59,7 +59,7 @@ async function init() {
     if (!res.ok) throw new Error('HTTP ' + res.status);
     pages = await res.json();
     fuse = new Fuse(pages, {
-      keys: ['Title', 'Summary'],
+      keys: ['title', 'summary'],
       threshold: 0.4
     });
     document.getElementById('status').textContent = '已載入 ' + pages.length + ' 個章節';
@@ -82,9 +82,9 @@ function doSearch() {
   var html = '';
   for (var i = 0; i < results.length; i++) {
     var r = results[i];
-    var chapterMatch = r.item.Permalink.match(/\/ch(\d+)-/);
+    var chapterMatch = r.item.permalink.match(/\/ch(\d+)-/);
     var chapter = chapterMatch ? 'Chapter ' + chapterMatch[1] : '';
-    html += '<div class="search-result"><a href="' + r.item.Permalink + '">' + r.item.Title + '</a>';
+    html += '<div class="search-result"><a href="' + r.item.permalink + '">' + r.item.title + '</a>';
     html += '<div class="match-info">在 ' + chapter + ' 中找到</div></div>';
   }
   resultsDiv.innerHTML = html;
