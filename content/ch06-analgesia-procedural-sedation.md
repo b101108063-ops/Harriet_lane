@@ -1,6 +1,6 @@
 ---
 title: "Chapter 06: Analgesia and Procedural Sedation"
-weight: 06
+weight: 6
 chapter: true
 ---
 

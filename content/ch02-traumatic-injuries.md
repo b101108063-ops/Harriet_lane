@@ -1,6 +1,6 @@
 ---
 title: "Chapter 02: Traumatic Injuries"
-weight: 02
+weight: 2
 chapter: true
 ---
 

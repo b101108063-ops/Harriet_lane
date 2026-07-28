@@ -1,6 +1,6 @@
 ---
 title: "Chapter 03: Toxicology"
-weight: 03
+weight: 3
 chapter: true
 ---
 

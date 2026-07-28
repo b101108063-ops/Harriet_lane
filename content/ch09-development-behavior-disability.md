@@ -1,6 +1,6 @@
 ---
 title: "Chapter 09: Development, Behavior, and Developmental Disability"
-weight: 09
+weight: 9
 chapter: true
 ---
 

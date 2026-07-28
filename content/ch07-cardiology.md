@@ -1,6 +1,6 @@
 ---
 title: "Chapter 07: Cardiology"
-weight: 07
+weight: 7
 chapter: true
 ---
 

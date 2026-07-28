@@ -1,6 +1,6 @@
 ---
 title: "Chapter 05: Adolescent Medicine"
-weight: 05
+weight: 5
 chapter: true
 ---
 
