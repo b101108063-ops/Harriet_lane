@@ -1,7 +1,38 @@
 {{- define "main" -}}
+<style>
+.post-item { margin-bottom: 1.5rem; }
+.post-item .card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1.5rem;
+  background: #fafafa;
+  transition: box-shadow 0.2s;
+}
+.post-item .card:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+.post-item .card h2 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.2rem;
+}
+.post-item .card a {
+  text-decoration: none;
+  color: inherit;
+}
+.post-item .card a:hover {
+  color: #1a73e8;
+}
+</style>
+
+<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1rem;">
 {{- range .Site.Home.Pages -}}
 <div class="post-item">
-  <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+  <a href="{{ .RelPermalink }}">
+    <div class="card">
+      <h2>{{ .Title }}</h2>
+    </div>
+  </a>
 </div>
 {{- end -}}
+</div>
 {{- end -}}
