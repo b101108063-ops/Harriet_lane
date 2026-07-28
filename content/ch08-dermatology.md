@@ -1,6 +1,6 @@
 ---
 title: "Chapter 08: Dermatology"
-weight: 8
+weight: 08
 chapter: true
 ---
 

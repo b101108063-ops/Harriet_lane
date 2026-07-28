@@ -1,6 +1,6 @@
 ---
 title: "Chapter 04: Procedures"
-weight: 4
+weight: 04
 chapter: true
 ---
 

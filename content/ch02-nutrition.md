@@ -1,6 +1,6 @@
 ---
 title: "Chapter 02: Nutrition"
-weight: 2
+weight: 02
 chapter: true
 ---
 
