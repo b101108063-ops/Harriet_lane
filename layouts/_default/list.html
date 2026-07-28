@@ -1,0 +1,7 @@
+{{- define "main" -}}
+{{- range .Site.Home.Pages -}}
+<div class="post-item">
+  <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+</div>
+{{- end -}}
+{{- end -}}
