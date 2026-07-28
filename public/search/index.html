@@ -171,70 +171,59 @@ body { font-size: 14px; line-height: 1.5; }
 .search-result a:hover { color: #93c5fd; }
 .search-result .match-info { color: #888; font-size: 0.8rem; margin-top: 0.3rem; }
 .no-results { color: #888; text-align: center; padding: 1rem; }
+#status { color: #888; text-align: center; padding: 1rem; }
 </style>
 
 <div class="search-box">
-  <input type="text" id="search-input" placeholder="搜尋章節內容..." oninput="search()">
+  <input type="text" id="search-input" placeholder="搜尋章節內容..." oninput="doSearch()">
+  <div id="status"></div>
   <div id="search-results"></div>
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0"></script>
 <script>
 var fuse;
-var jsonData = [];
+var pages = [];
 
-async function loadSearch() {
-  var res = await fetch('/index.json');
-  jsonData = await res.json();
-  fuse = new Fuse(jsonData, {
-    keys: [
-      { name: 'Title', weight: 2 },
-      { name: 'Summary', weight: 1 },
-      { name: 'Content', weight: 0.5 }
-    ],
-    includeMatches: true,
-    threshold: 0.4
-  });
+async function init() {
+  document.getElementById('status').textContent = '載入搜尋索引...';
+  try {
+    var res = await fetch('/index.json');
+    if (!res.ok) throw new Error('HTTP ' + res.status);
+    pages = await res.json();
+    fuse = new Fuse(pages, {
+      keys: ['Title', 'Summary'],
+      threshold: 0.4
+    });
+    document.getElementById('status').textContent = '已載入 ' + pages.length + ' 個章節';
+    setTimeout(function() { document.getElementById('status').textContent = ''; }, 2000);
+  } catch(e) {
+    document.getElementById('status').textContent = '載入失敗: ' + e.message;
+  }
 }
 
-function search() {
+function doSearch() {
   var query = document.getElementById('search-input').value.trim();
   var resultsDiv = document.getElementById('search-results');
-  
-  if (!query) {
-    resultsDiv.innerHTML = '';
-    return;
-  }
-  
-  if (!fuse) {
-    resultsDiv.innerHTML = '<p class="no-results">載入中...</p>';
-    return;
-  }
-  
+  if (!query) { resultsDiv.innerHTML = ''; return; }
+  if (!fuse) { resultsDiv.innerHTML = '<p class="no-results">索引尚未載入，請稍候</p>'; return; }
   var results = fuse.search(query).slice(0, 15);
-  
   if (results.length === 0) {
-    resultsDiv.innerHTML = '<p class="no-results">沒有找到符合的結果</p>';
+    resultsDiv.innerHTML = '<p class="no-results">沒有找到符合「' + query + '」的結果</p>';
     return;
   }
-  
   var html = '';
   for (var i = 0; i < results.length; i++) {
     var r = results[i];
-    var chapterNum = r.item.Permalink.match(/\/ch(\d+)-/);
-    var chapterText = chapterNum ? 'Chapter ' + chapterNum[1] : '';
+    var chapterMatch = r.item.Permalink.match(/\/ch(\d+)-/);
+    var chapter = chapterMatch ? 'Chapter ' + chapterMatch[1] : '';
     html += '<div class="search-result"><a href="' + r.item.Permalink + '">' + r.item.Title + '</a>';
-    if (r.item.Summary && r.item.Summary.indexOf(query) >= 0) {
-      html += '<div class="match-info">在 ' + chapterText + ' 的導讀摘要中找到關鍵字</div>';
-    } else {
-      html += '<div class="match-info">在 ' + chapterText + ' 中找到</div>';
-    }
-    html += '</div>';
+    html += '<div class="match-info">在 ' + chapter + ' 中找到</div></div>';
   }
   resultsDiv.innerHTML = html;
 }
 
-loadSearch();
+init();
 </script>
     </main>
     
