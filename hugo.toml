@@ -3,11 +3,12 @@ languageCode = 'en-us'
 title = 'Harriet Lane Handbook'
 theme = 'PaperMod'
 
-[markup.goldmark.renderer]
-  unsafe = true
-
-[markup.goldmark.extensions]
-  headingIDs = false
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+    [markup.goldmark.extensions]
+      headingIDs = false
 
 [frontmatter]
 date = ["date", "publishDate", "lastmod"]
