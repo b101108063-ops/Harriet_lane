@@ -134,6 +134,14 @@
 </header>
 <main class="main"><style>
 body { font-size: 14px; line-height: 1.5; }
+.search-box { max-width: 600px; margin: 1rem 0; }
+#search-input { width: 100%; padding: 0.8rem; font-size: 1rem; border: 1px solid #333; border-radius: 8px; background: #1e1e1e; color: #e0e0e0; box-sizing: border-box; }
+#search-results { margin-top: 1rem; }
+.search-result { padding: 0.8rem; margin-bottom: 0.5rem; background: #1e1e1e; border: 1px solid #333; border-radius: 8px; }
+.search-result a { color: #60a5fa; text-decoration: none; font-size: 1rem; font-weight: 600; }
+.search-result .match-info { color: #888; font-size: 0.8rem; margin-top: 0.3rem; }
+.no-results { color: #888; text-align: center; padding: 1rem; }
+#status { color: #888; text-align: center; padding: 1rem; }
 .post-item { margin-bottom: 0.5rem; }
 .post-item .card {
   border: 1px solid #333;
@@ -147,9 +155,18 @@ body { font-size: 14px; line-height: 1.5; }
 .post-item .card a { text-decoration: none; color: #e0e0e0; }
 .post-item .card a:hover { color: #60a5fa; }
 .main-content { max-width: 100%; padding: 1rem; }
+.section-title { color: #888; font-size: 0.85rem; margin: 1rem 0 0.5rem 0; text-transform: uppercase; letter-spacing: 1px; }
 </style>
 
 <div class="main-content">
+<p class="section-title">Search</p>
+<div class="search-box">
+  <input type="text" id="search-input" placeholder="搜尋章節內容..." oninput="doSearch()">
+  <div id="status"></div>
+  <div id="search-results"></div>
+</div>
+
+<p class="section-title">All Chapters</p>
 <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 0.5rem;"><div class="post-item">
   <a href="/Harriet_lane/ch01-emergency-critical-care/">
     <div class="card">
@@ -344,6 +361,52 @@ body { font-size: 14px; line-height: 1.5; }
   </a>
 </div></div>
 </div>
+
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0"></script>
+<script>
+var fuse;
+var pages = [];
+
+async function init() {
+  document.getElementById('status').textContent = '載入搜尋索引...';
+  try {
+    var res = await fetch('/Harriet_lane/index.json');
+    if (!res.ok) throw new Error('HTTP ' + res.status);
+    pages = await res.json();
+    fuse = new Fuse(pages, {
+      keys: ['Title', 'Summary'],
+      threshold: 0.4
+    });
+    document.getElementById('status').textContent = '已載入 ' + pages.length + ' 個章節';
+    setTimeout(function() { document.getElementById('status').textContent = ''; }, 2000);
+  } catch(e) {
+    document.getElementById('status').textContent = '載入失敗: ' + e.message;
+  }
+}
+
+function doSearch() {
+  var query = document.getElementById('search-input').value.trim();
+  var resultsDiv = document.getElementById('search-results');
+  if (!query) { resultsDiv.innerHTML = ''; return; }
+  if (!fuse) { resultsDiv.innerHTML = '<p class="no-results">索引尚未載入，請稍候</p>'; return; }
+  var results = fuse.search(query).slice(0, 15);
+  if (results.length === 0) {
+    resultsDiv.innerHTML = '<p class="no-results">沒有找到符合「' + query + '」的結果</p>';
+    return;
+  }
+  var html = '';
+  for (var i = 0; i < results.length; i++) {
+    var r = results[i];
+    var chapterMatch = r.item.Permalink.match(/\/ch(\d+)-/);
+    var chapter = chapterMatch ? 'Chapter ' + chapterMatch[1] : '';
+    html += '<div class="search-result"><a href="' + r.item.Permalink + '">' + r.item.Title + '</a>';
+    html += '<div class="match-info">在 ' + chapter + ' 中找到</div></div>';
+  }
+  resultsDiv.innerHTML = html;
+}
+
+init();
+</script>
     </main>
     
 <footer class="footer">
